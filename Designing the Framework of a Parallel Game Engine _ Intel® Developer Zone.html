@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<!-- saved from url=(0092)https://software.intel.com/en-us/articles/designing-the-framework-of-a-parallel-game-engine/ -->
+<html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#" class="js tablesaw-enhanced"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link href="https://ssl.microsofttranslator.com/static/219580/css/WidgetV3.css?v=219580" rel="stylesheet"><script type="text/javascript" src="./Designing the Framework of a Parallel Game Engine _ Intel® Developer Zone_files/aca265f578"></script><script src="./Designing the Framework of a Parallel Game Engine _ Intel® Developer Zone_files/nr-632.min.js"></script><script type="text/javascript" async="" src="./Designing the Framework of a Parallel Game Engine _ Intel® Developer Zone_files/analytics.js"></script><script type="text/javascript" async="" src="./Designing the Framework of a Parallel Game Engine _ Intel® Developer Zone_files/inpage_linkid.js" id="undefined"></script><script type="text/javascript" charset="UTF-8" src="./Designing the Framework of a Parallel Game Engine _ Intel® Developer Zone_files/WidgetV3.ashx"></script>
+  <meta charset="utf-8"><script src="./Designing the Framework of a Parallel Game Engine _ Intel® Developer Zone_files/gtm.js" type="text/javascript" async=""></script><script type="text/javascript" async="" src="./Designing the Framework of a Parallel Game Engine _ Intel® Developer Zone_files/ga.js"></script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VQIOVFNRGwACVFRWDwE="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),f=c.length,u=i(a,o,r),d=0;f>d;d++)c[d].apply(u,n);return u}function a(t,e){f[t]=s(t).concat(e)}function s(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:s,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t){try{i.console&&console.log(t)}catch(e){}}var n,r=t("ee"),o=t(1),i={};try{n=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(i.console=!0,-1!==n.indexOf("dev")&&(i.dev=!0),-1!==n.indexOf("nr_dev")&&(i.nrDev=!0))}catch(a){}i.nrDev&&r.on("internal-error",function(t){e(t.stack)}),i.dev&&r.on("fn-err",function(t,n,r){e(r.stack)}),i.dev&&(e("NR AGENT IN DEVELOPMENT MODE"),e("flags: "+o(i,function(t){return t}).join(", ")))},{1:23,ee:"QJf3ax"}],4:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,t(5),window.onerror=e;try{throw new Error}catch(f){"stack"in f&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&t(4),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:10,2:9,3:7,4:11,5:3,6:24,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t){t("loader").features.ins=!0},{loader:"G9z0Bl"}],6:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(1),i=t(2);t("loader").features.stn=!0,t(3),n.on("fn-start",function(t){var e=t[0];e instanceof Event&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof Event&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),i.on("fn-start",function(){this.bstStart=Date.now()}),i.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1),window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:10,2:9,3:8,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],7:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=(t(1),t("ee").create()),i=t(2)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:24,2:25,ee:"QJf3ax",gos:"7eSDFh"}],8:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState"],"-")},{1:25,2:24,ee:"QJf3ax"}],9:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:25,2:24,ee:"QJf3ax"}],10:[function(t,e){function n(t,e,n){t[0]=o(t[0],"fn-",null,n)}var r=(t(2),t("ee").create()),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:25,2:24,ee:"QJf3ax"}],11:[function(t,e){function n(){f.inPlace(this,p,"fn-")}function r(t,e){f.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}function i(t,e){for(var n in t)e[n]=t[n];return e}var a=t("ee").create(),s=t(1),c=t(2),f=c(a),u=c(s),d=window.XMLHttpRequest,p=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=a,window.XMLHttpRequest=function(t){var e=new d(t);try{a.emit("new-xhr",[],e),u.inPlace(e,["addEventListener","removeEventListener"],"-",o),e.addEventListener("readystatechange",n,!1)}catch(r){try{a.emit("internal-error",[r])}catch(i){}}return e},i(d,XMLHttpRequest),XMLHttpRequest.prototype=d.prototype,f.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),a.on("send-xhr-start",r),a.on("open-xhr-start",r)},{1:7,2:25,ee:"QJf3ax"}],12:[function(t){function e(t){var e=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!e.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=n(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(e.cat=d.split(", ").pop())}}else e.status=0;r.cbTime=this.cbTime,o("xhr",[e,r,this.startTime])}}}function n(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(1);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=e,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,e){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=n(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{a.emit("internal-error",[n])}catch(r){}}};for(var u=0;c>u;u++)e.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:13,3:11,4:7,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],13:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],14:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:23,2:24,handle:"D5DuLP"}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):(o[t]||(o[t]=[]),void o[t].push(e))}var r=t("ee").create(),o={};e.exports=n,n.ee=r,r.q=o},{ee:"QJf3ax"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info,e=f.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(d,function(e,n){e in t||(t[e]=n)});var n="https"===u.split(":")[0]||t.sslForHttp;p.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=p.proto+t.agent,e.parentNode.insertBefore(r,e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=(t(2),window),f=c.document,u=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-632.min.js"},p=e.exports={offset:i(),origin:u,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()])},{1:23,2:14,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],23:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],24:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],25:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,f;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){u([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return f=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,f],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,f(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){u([o,e,n,r])}}function f(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){u([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function u(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:24,ee:"QJf3ax"}]},{},["G9z0Bl",4,12,6,5]);</script>
+<link rel="shortcut icon" href="https://software.intel.com/sites/all/themes/idzone/favicon.ico" type="image/vnd.microsoft.icon">
+<script>dataLayer = [{"timestamp":1434806833,"entityType":"node","entityBundle":"article","entityId":"155986","entityLabel":"Designing the Framework of a Parallel Game Engine","entityLanguage":"en","entityTnid":"0","entityVid":"3814639","entityUid":"335526","entityCreated":"1245365703","entityStatus":"1","entityUuid":"ff656f48-b7a0-29a4-815a-b5145ff30a6f","userUuid":"","userInit":"1","drupalLanguage":"en","userUid":0,"systemId":"1","systemName":"idzDrupal"}];</script>
+<meta name="description" content="How to Get the Most Out of a Multi-Core CPU with Your Game Engine">
+<meta name="generator" content="Drupal 7 (http://drupal.org)">
+<link rel="canonical" href="https://software.intel.com/en-us/articles/designing-the-framework-of-a-parallel-game-engine">
+<link rel="shortlink" href="https://software.intel.com/en-us/node/155986">
+  <title>Designing the Framework of a Parallel Game Engine | Intel® Developer Zone</title>
+
+      <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="cleartype" content="on">
+
+  <link type="text/css" rel="stylesheet" href="./Designing the Framework of a Parallel Game Engine _ Intel® Developer Zone_files/css_lQaZfjVpwP_oGNqdtWCSpJT1EMqXdMiU84ekLLxQnc4.css" media="all">
+<link type="text/css" rel="stylesheet" href="./Designing the Framework of a Parallel Game Engine _ Intel® Developer Zone_files/css_GwEHrotX6UrYp3VgfegZpvnHxKMdAGzJR7coITLH4MA.css" media="all">
+<link type="text/css" rel="stylesheet" href="./Designing the Framework of a Parallel Game Engine _ Intel® Developer Zone_files/css_x0eREIPpbItYgHUiOZESf46uf--H-bf3JuBKxlnq7-c.css" media="all">
+<link type="text/css" rel="stylesheet" href="./Designing the Framework of a Parallel Game Engine _ Intel® Developer Zone_files/css_9DJZsSuU-MunDo7ZVmJNgppO5MxmoBeQfyMGKDpAjDU.css" media="all">
+  <script src="./Designing the Framework of a Parallel Game Engine _ Intel® Developer Zone_files/js_xAPl0qIk9eowy_iS9tNkCWXLUVoat94SQT48UBCFkyQ.js"></script><style type="text/css"></style>
+<script src="./Designing the Framework of a Parallel Game Engine _ Intel® Developer Zone_files/js__yxA5ATpjQbdpVqPuJX-I5aBF3UxacLAUZSUe3WTiPY.js"></script>
+<script src="./Designing the Framework of a Parallel Game Engine _ Intel® Developer Zone_files/BrightcoveExperiences.js"></script>
+<script src="./Designing the Framework of a Parallel Game Engine _ Intel® Developer Zone_files/js_mZ1nyK_4k7SS4_tZ8BMPN-8jUm04D8WZgKHEfafIR2Y.js"></script>
+<script>var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-17890616-1"]);var pluginUrl = 
+ '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+_gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+_gaq.push(["_setDomainName", ".intel.com"]);
+_gaq.push(["_setAllowLinker", true]);_gaq.push(['_setCustomVar', 1, "locale-code", "en", 3]);_gaq.push(['_setCustomVar', 2, "content", "Article|Technical Article|Game Development|", 3]);_gaq.push(['_setCustomVar', 3, "content-aud", "Laptop, Tablet, Desktop|Developers|Game Development, Graphics, Parallel Computing, Threa", 3]);_gaq.push(['_setCustomVar', 4, "content-meta", "||", 3]);_gaq.push(['_setCustomVar', 5, "member", "|||", 3]);_gaq.push(['_setCustomVar', 6, "idz-node", "155986", 3]);_gaq.push(['_setCustomVar', 8, "export-who", "|0|profile_id||", 3]);_gaq.push(['_setCustomVar', 9, "export-what", "||1|node|155986|", 3]);_gaq.push(['_setCustomVar', 10, "export-when", "|1434806832|", 3]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();</script>
+<script src="./Designing the Framework of a Parallel Game Engine _ Intel® Developer Zone_files/js_eKkCEL5M4U3EicCqWznKNE7QL9q3JVQ_Du0-MJSh4WI.js"></script>
+<script src="./Designing the Framework of a Parallel Game Engine _ Intel® Developer Zone_files/js_CWf2OUb8sKVUF0MDdN0Z-pL4FLbHV7qZSinhBInln3c.js"></script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"en-us\/","ajaxPageState":{"theme":"idzone","theme_token":"WMkiom0I3GsSHWyxueXMR3hbSBF2SM-MLXDhCoTZLuc","js":{"sites\/all\/themes\/idzen\/js\/breakpoints.min.js":1,"sites\/all\/themes\/idzen\/js\/utils\/redraw-siblings.min.js":1,"sites\/all\/themes\/idzen\/js\/responsive\/nav-menu-widget.min.js":1,"sites\/all\/themes\/idzen\/js\/responsive\/mobile-icon-button-widget.min.js":1,"sites\/all\/themes\/idzen\/js\/responsive\/language-selector.min.js":1,"sites\/all\/themes\/idzen\/js\/responsive\/look-for-intel-widget.min.js":1,"sites\/all\/themes\/idzen\/js\/responsive\/user-login-widget.min.js":1,"sites\/all\/themes\/idzen\/js\/responsive\/header-nav-menu-widget.min.js":1,"sites\/all\/themes\/idzen\/js\/responsive\/comments.min.js":1,"sites\/all\/themes\/idzen\/js\/selectric-runner.min.js":1,"sites\/all\/themes\/idzen\/js\/tabs.min.js":1,"sites\/all\/themes\/idzen\/js\/zurb-responsive-tables.min.js":1,"sites\/all\/themes\/idzen\/js\/google-track.min.js":1,"sites\/all\/themes\/idzen\/js\/faq.min.js":1,"sites\/all\/themes\/idzen\/js\/multi-filter-view.min.js":1,"sites\/all\/themes\/idzen\/js\/comparison-tables.min.js":1,"sites\/all\/themes\/idzen\/js\/responsive-block-grid.min.js":1,"sites\/all\/themes\/idzen\/js\/anchor-dropdown.min.js":1,"sites\/all\/themes\/idzen\/js\/collapsible.min.js":1,"sites\/all\/themes\/idzen\/js\/news-ticker.min.js":1,"sites\/all\/themes\/idzen\/js\/collapse-list.min.js":1,"sites\/all\/themes\/idzen\/js\/search_responsive.min.js":1,"sites\/all\/modules\/custom\/idz_search\/js\/idz_search_block.min.js":1,"sites\/all\/themes\/idzone\/js\/comment-form-resizer.min.js":1,"misc\/jquery.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/custom\/intel_belt_rewards\/intel_belt_rewards.js":1,"sites\/all\/modules\/custom\/social_block\/social-block.min.js":1,"https:\/\/sadmin.brightcove.com\/js\/BrightcoveExperiences.js":1,"sites\/all\/libraries\/colorbox\/colorbox\/jquery.colorbox-min.js":1,"sites\/all\/modules\/contrib\/colorbox\/js\/colorbox.js":1,"sites\/all\/modules\/contrib\/colorbox\/js\/colorbox_load.js":1,"sites\/all\/modules\/custom\/intel_metrics\/js\/qualtrics.js":1,"sites\/all\/modules\/contrib\/panels\/js\/panels.js":1,"sites\/all\/modules\/contrib\/quote\/quote.js":1,"sites\/all\/modules\/contrib\/google_analytics\/googleanalytics.js":1,"0":1,"sites\/all\/modules\/contrib\/datalayer\/js\/getCanonical.js":1,"sites\/all\/themes\/idzen\/js\/syntaxhighlighter\/scripts\/shCore.min.js":1,"sites\/all\/themes\/idzen\/js\/syntaxhighlighter\/scripts\/shBrushBash.min.js":1,"sites\/all\/themes\/idzen\/js\/syntaxhighlighter\/scripts\/shBrushCpp.min.js":1,"sites\/all\/themes\/idzen\/js\/syntaxhighlighter\/scripts\/shBrushCSharp.min.js":1,"sites\/all\/themes\/idzen\/js\/syntaxhighlighter\/scripts\/shBrushCss.min.js":1,"sites\/all\/themes\/idzen\/js\/syntaxhighlighter\/scripts\/shBrushFortran.min.js":1,"sites\/all\/themes\/idzen\/js\/syntaxhighlighter\/scripts\/shBrushJava.min.js":1,"sites\/all\/themes\/idzen\/js\/syntaxhighlighter\/scripts\/shBrushJScript.min.js":1,"sites\/all\/themes\/idzen\/js\/syntaxhighlighter\/scripts\/shBrushPerl.min.js":1,"sites\/all\/themes\/idzen\/js\/syntaxhighlighter\/scripts\/shBrushPhp.min.js":1,"sites\/all\/themes\/idzen\/js\/syntaxhighlighter\/scripts\/shBrushPlain.min.js":1,"sites\/all\/themes\/idzen\/js\/syntaxhighlighter\/scripts\/shBrushPython.min.js":1,"sites\/all\/themes\/idzen\/js\/syntaxhighlighter\/scripts\/shBrushR.min.js":1,"sites\/all\/themes\/idzen\/js\/syntaxhighlighter\/scripts\/shBrushRuby.min.js":1,"sites\/all\/themes\/idzen\/js\/syntaxhighlighter\/scripts\/shBrushSql.min.js":1,"sites\/all\/themes\/idzen\/js\/syntaxhighlighter\/scripts\/shBrushXml.min.js":1,"sites\/all\/themes\/idzen\/js\/intel-filter.min.js":1,"sites\/all\/themes\/idzen\/js\/vendors\/jquery\/jquery-1.10.2.min.js":1,"sites\/all\/themes\/idzen\/js\/plugins\/jquery.breakpoint.min.js":1,"sites\/all\/themes\/idzen\/js\/plugins\/jquery.selectric.min.js":1,"sites\/all\/themes\/idzen\/js\/jquery-noconflict.min.js":1,"sites\/all\/themes\/idzen\/js\/idzen-init.min.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/modules\/custom\/bds\/bds.css":1,"modules\/book\/book.css":1,"sites\/all\/modules\/contrib\/calendar\/css\/calendar_multiday.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/contrib\/date\/date_api\/date.css":1,"sites\/all\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/custom\/intel_advanced_forum_style\/styles\/idz\/advanced-forum.idz.images.css":1,"sites\/all\/modules\/custom\/intel_advanced_forum_style\/styles\/idz\/advanced-forum.idz.structure.css":1,"sites\/all\/modules\/contrib\/mollom\/mollom.css":1,"modules\/node\/node.css":1,"sites\/all\/modules\/custom\/node_attachments_block\/node-attachments-block.less.css":1,"sites\/all\/modules\/custom\/social_block\/social-block.less.css":1,"modules\/user\/user.css":1,"modules\/forum\/forum.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/libraries\/colorbox\/example1\/colorbox.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/contrib\/panels\/css\/panels.css":1,"sites\/all\/modules\/contrib\/quote\/quote.css":1,"modules\/contextual\/contextual.css":1,"modules\/locale\/locale.css":1,"sites\/all\/themes\/idzone\/system.menus.css":1,"sites\/all\/themes\/idzone\/system.messages.css":1,"sites\/all\/themes\/idzone\/system.theme.css":1,"sites\/all\/themes\/idzen\/css\/export.css":1,"sites\/all\/themes\/idzone\/css\/styles.css":1,"sites\/all\/themes\/idzen\/css\/components\/images.css":1,"sites\/all\/themes\/idzen\/js\/syntaxhighlighter\/styles\/shCore.css":1,"sites\/all\/themes\/idzen\/js\/syntaxhighlighter\/styles\/shThemeIntel.css":1,"sites\/all\/themes\/idzen\/sass\/global\/zurb-responsive-tables.css":1,"sites\/all\/themes\/idzone\/css\/views.css":1}},"colorbox":{"transition":"elastic","speed":"350","opacity":"0.85","slideshow":false,"slideshowAuto":true,"slideshowSpeed":"2500","slideshowStart":"start slideshow","slideshowStop":"stop slideshow","current":"{current} of {total}","previous":"\u00ab Prev","next":"Next \u00bb","close":"","overlayClose":true,"maxWidth":"1280px","maxHeight":"100%","initialWidth":"575","initialHeight":"566","fixed":false,"scrolling":false},"jcarousel":{"ajaxPath":"\/en-us\/jcarousel\/ajax\/views"},"quote_nest":"2","googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|bz2|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|pkg|png|ppt|pptx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip","trackDomainMode":"1"},"language":{"language":"en","name":"English","native":"English","direction":"0","enabled":"1","plurals":"0","formula":"","domain":"","prefix":"en-us","weight":"-10","javascript":"","provider":"locale-url","dir":"ltr"}});</script>
+      <!--[if lt IE 9]>
+    <script src="/sites/all/themes/zen/js/html5-respond.js"></script>
+    <![endif]-->
+    <link rel="apple-touch-icon" sizes="57x57" href="https://software.intel.com/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="https://software.intel.com/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="https://software.intel.com/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="https://software.intel.com/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="https://software.intel.com/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="https://software.intel.com/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="https://software.intel.com/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="https://software.intel.com/apple-touch-icon-152x152.png">
+  <link rel="icon" type="image/png" href="https://software.intel.com/favicon-196x196.png" sizes="196x196">
+  <link rel="icon" type="image/png" href="https://software.intel.com/favicon-160x160.png" sizes="160x160">
+  <link rel="icon" type="image/png" href="https://software.intel.com/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="https://software.intel.com/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="https://software.intel.com/favicon-32x32.png" sizes="32x32">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+  <meta name="microsoft" content="notranslateclasses header l-main-menu comments-wrapper l-footer-first l-footer-second l-language-footer message-wrapper region-navigation l-sidebar-second admin-menu-siteintel-com admin-menu-processed">
+<script type="text/javascript" charset="utf-8" src="./Designing the Framework of a Parallel Game Engine _ Intel® Developer Zone_files/metrics.js"></script><link href="https://ssl.microsofttranslator.com/static/219580/css/WidgetLauncher.css?v=219580" rel="stylesheet"></head>
+<body class="html not-front not-logged-in one-sidebar sidebar-second page-node page-node- page-node-155986 node-type-article theme-idzone i18n-en section-articles">
+<!-- Google Tag Manager -->
+<noscript>&lt;iframe src="//www.googletagmanager.com/ns.html?id=GTM-PZRG3F" height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;</noscript>
+<script type="text/javascript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0];var j=d.createElement(s);var dl=l!='dataLayer'?'&l='+l:'';j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;j.type='text/javascript';j.async=true;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PZRG3F');</script>
+<!-- End Google Tag Manager -->
+  <p id="skip-link">
+    <a href="https://software.intel.com/en-us/articles/designing-the-framework-of-a-parallel-game-engine/#main-menu" class="element-invisible element-focusable">Jump to navigation</a>
+  </p>
+
+<div id="page" class="intel_filter_syntaxhighlighter-processed">
+<header class="l-main-menu">
+  <div class="limiter">
+    <a class="logo-wrapper" href="https://software.intel.com/en-us">
+      <div class="logo icon-logo-intel">
+        Developer Zone      </div>
+    </a>
+    <span class="mobile-icon-button user icon-user"></span>
+    <section class="l-user-area">
+      <div id="header-user-display" class="user-display">
+      <div class="login">
+      <a href="https://software.intel.com/registration?lang=en-us" class="register-link">Join today</a>      <a href="https://software.intel.com/en-us/user/login?destination=node/155986" class="login-link">Log in</a>    </div>
+  </div>
+    </section>
+    <span class="mobile-icon-button nav-menu icon-menu"></span>
+      <nav class="menu">
+  <ul>
+    <li class="menu-item item-1">
+      Development      <ul>
+        <li class="category item-1">
+          OS          <ul>
+            <li><a class="google-track-navigation" href="https://software.intel.com/en-us/android">Android*</a></li>
+            <li><a class="google-track-navigation" href="https://software.intel.com/en-us/chrome">Chrome*</a></li>
+            <li><a class="google-track-navigation" href="https://software.intel.com/en-us/html5">HTML5</a></li>
+            <li><a class="google-track-navigation" href="https://software.intel.com/en-us/windows">Windows*</a></li>
+          </ul>
+        </li>
+        <li class="category item-2">
+          Device          <ul>
+            <li><a class="google-track-navigation" href="https://software.intel.com/en-us/windows">2-in-1 &amp; Ultrabook™</a></li>
+            <li><a class="google-track-navigation" href="https://software.intel.com/en-us/business-client">Business Client</a></li>
+            <li><a class="google-track-navigation" href="https://software.intel.com/en-us/embedded-development-tools">Embedded Systems</a></li>
+            <li><a class="google-track-navigation" href="https://software.intel.com/en-us/iot">IoT</a></li>
+            <li><a class="google-track-navigation" href="https://software.intel.com/en-us/server-developer">Server, Workstation, HPC</a></li>
+          </ul>
+        </li>
+        <li class="category item-3">
+          Technology          <ul>
+            <li><a class="google-track-navigation" href="https://software.intel.com/en-us/bigdata">Big Data</a></li>
+            <li><a class="google-track-navigation" href="https://software.intel.com/en-us/code-modernization">Code Modernization</a></li>
+            <li><a class="google-track-navigation" href="https://software.intel.com/en-us/intel-widi">Dual Screen</a></li>
+            <li><a class="google-track-navigation" href="https://software.intel.com/en-us/gamedev">Game Dev</a></li>
+            <li><a class="google-track-navigation" href="https://software.intel.com/en-us/realsense">Intel® RealSense™</a></li>
+            <li><a class="google-track-navigation" href="https://software.intel.com/en-us/isa-extensions">ISA Extensions</a></li>
+            <li><a class="google-track-navigation" href="https://software.intel.com/en-us/networking">Networking</a></li>
+            <li><a class="google-track-navigation" href="https://software.intel.com/en-us/oss">Open Source</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li class="menu-item item-2">
+      Tools      <ul>
+        <li class="category item-1">
+          Developer Type          <ul>
+            <li><a class="google-track-navigation" href="https://software.intel.com/en-us/embedded-development-tools">Embedded Systems</a></li>
+            <li><a class="google-track-navigation" href="https://software.intel.com/en-us/gamedev/tools">Game Dev</a></li>
+            <li><a class="google-track-navigation" href="https://software.intel.com/en-us/intel-media-server-studio">Media</a></li>
+            <li><a class="google-track-navigation" href="https://software.intel.com/en-us/developer-tools-technical-enterprise">Technical, Enterprise, HPC</a></li>
+            <li><a class="google-track-navigation" href="https://software.intel.com/en-us/html5">Web</a></li>
+          </ul>
+        </li>
+        <li class="category item-2">
+          OS          <ul>
+            <li><a class="google-track-navigation" href="https://software.intel.com/en-us/intel-sdp-home">All Tools</a></li>
+            <li><a class="google-track-navigation" href="https://software.intel.com/en-us/android">Android*</a></li>
+            <li><a class="google-track-navigation" href="http://xdk.intel.com/">HTML5</a></li>
+            <li><a class="google-track-navigation" href="https://software.intel.com/en-us/linux-tool-suites">Linux*</a></li>
+            <li><a class="google-track-navigation" href="https://software.intel.com/en-us/intel-software-development-products-for-mac-os-x">OS X*</a></li>
+            <li><a class="google-track-navigation" href="https://software.intel.com/en-us/windows-tool-suites">Windows*</a></li>
+          </ul>
+        </li>
+        <li class="category item-3">
+          Product Support          <ul>
+            <li><a class="google-track-navigation" href="https://software.intel.com/en-us/intel-software-developer-support">Contact Support</a></li>
+            <li><a class="google-track-navigation" href="https://software.intel.com/en-us/intel-software-technical-documentation">Documentation</a></li>
+            <li><a href="https://registrationcenter.intel.com/" target="_blank">Intel Registration Center</a></li>
+            <li><a class="google-track-navigation" href="https://software.intel.com/en-us/forum">Product Forums</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li class="menu-item item-3">
+      Resources      <ul>
+        <li class="category item-1">
+          Partner with Intel          <ul>
+            <li><a class="google-track-navigation" href="https://software.intel.com/en-us/academic">Academic Program</a></li>
+            <li><a class="google-track-navigation" href="https://software.intel.com/en-us/partner-home">Become a Partner</a></li>
+            <li><a class="google-track-navigation" href="https://software.intel.com/en-us/blackbelt">Black Belt Developer</a></li>
+            <li><a class="google-track-navigation" href="https://software.intel.com/en-us/intel-software-innovators">Innovator Program</a></li>
+            <li><a class="google-track-navigation" href="https://software.intel.com/en-us/success-stories">Success Stories</a></li>
+          </ul>
+        </li>
+        <li class="category item-2">
+          Learn          <ul>
+            <li><a class="google-track-navigation" href="https://software.intel.com/en-us/blogs">Blog</a></li>
+            <li><a class="google-track-navigation" href="https://software.intel.com/en-us/all-events">Events</a></li>
+            <li><a class="google-track-navigation" href="https://software.intel.com/en-us/free">Free Software &amp; Code Samples</a></li>
+            <li><a class="google-track-navigation" href="https://software.intel.com/en-us/ux">User Experience</a></li>
+            <li><a class="google-track-navigation" href="https://software.intel.com/en-us/videos">Videos</a></li>
+          </ul>
+        </li>
+        <li class="category item-3">
+          Support          <ul>
+            <li><a class="google-track-navigation" href="https://software.intel.com/en-us/contact">Contact Support</a></li>
+            <li><a class="google-track-navigation" href="https://software.intel.com/en-us/intel-developer-evangelists">Developer Evangelists</a></li>
+            <li><a class="google-track-navigation" href="https://software.intel.com/en-us/faq">FAQs</a></li>
+            <li><a class="google-track-navigation" href="https://software.intel.com/en-us/forum">Forums</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    <span class="mobile-icon-button search icon-search"></span>
+    <section class="l-search">
+      <form action="https://software.intel.com/en-us/search/site/language/en" method="get" id="idz-search-block-form" accept-charset="UTF-8" target="_top">
+  <div class="form-wrapper" id="idz_search_search_form">
+    <a id="search-dropdown" class="dropdown-toggle"></a>
+    <ul id="search-dropdown-options" class="dropdown-menu">
+      <li class="disabled"><a href="javascript:void(0)">Site to search:</a></li>
+      <li class="divider"></li>
+      <li><a class="active" href="javascript:void(0)" data-value="idz">Intel® DZ</a></li>
+      <li><a href="javascript:void(0)" data-value="intel">Intel.com</a></li>
+    </ul>
+    <input title="Search our content library..." placeholder="Search our content library..." class="form-text" type="text" id="edit-search-keyword" name="query" value="" size="15" maxlength="128">
+    <button class="form-submit dropdown-toggle" type="submit" id="edit-submit" value="Search"></button>
+  </div>
+</form>
+    </section>
+  </div>
+</header>
+      <div id="main" class="l-content-area">
+    <div class="message-wrapper">
+          </div>
+    <div id="content" class="column" role="main">
+            <a id="main-content"></a>
+                    <h1 class="page__title title" id="page-title" style="display: block;">Designing the Framework of a Parallel Game Engine</h1>
+                        
+      <section class="l-content-body">
+        
+
+
+<article class="node-155986 node node-article view-mode-full clearfix" about="/en-us/articles/designing-the-framework-of-a-parallel-game-engine" typeof="sioc:Item foaf:Document">
+
+      <header>
+                  <span property="dc:title" content="Designing the Framework of a Parallel Game Engine" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="18" datatype="xsd:integer" class="rdf-meta element-hidden"></span>
+              <p class="submitted">
+            <span class="user-picture">
+    <a href="https://software.intel.com/en-us/user/335526" title="View user profile."><img typeof="foaf:Image" src="./Designing the Framework of a Parallel Game Engine _ Intel® Developer Zone_files/profile.jpg" alt="Jeffrey Andrews (Intel)&#39;s picture" title="Jeffrey Andrews (Intel)&#39;s picture"></a>  </span>
+          <span property="dc:date dc:created" content="2009-06-18T15:55:03-07:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <a href="https://software.intel.com/en-us/user/335526" title="View user profile" class="username">Jeffrey Andrews (Intel)</a> on <time pubdate="" datetime="June 18, 2009">June 18, 2009</time></span>        </p>
+                  <p class="author-datetime">Last updated on <time datetime="January 1, 2015">January 1, 2015</time></p>
+                      <div class="social-share">
+        <div class="item-list"><ul><li class="facebook first"><a href="https://www.facebook.com/sharer/sharer.php?u=https://software.intel.com/en-us/articles/designing-the-framework-of-a-parallel-game-engine" class="icon-logo-facebook" target="_blank">Share</a></li>
+<li class="twitter"><a href="https://twitter.com/intent/tweet?text=Designing+the+Framework+of+a+Parallel+Game+Engine%3A&url=https%3A%2F%2Fsoftware.intel.com%2Fen-us%2Farticles%2Fdesigning-the-framework-of-a-parallel-game-engine&hashtags=IntelSoftware" class="icon-logo-twitter-bird" target="_blank" data-hashtags="IntelSoftware" data-text="Designing the Framework of a Parallel Game Engine:" data-url="https://software.intel.com/en-us/articles/designing-the-framework-of-a-parallel-game-engine">Tweet</a></li>
+<li class="google last"><a href="https://plus.google.com/share?url=https://software.intel.com/en-us/articles/designing-the-framework-of-a-parallel-game-engine" class="icon-logo-gplus" target="_blank">Share</a></li>
+</ul></div>  </div>
+
+
+          </header>
+  
+  <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Download PDF</p>
+
+<p><a href="https://software.intel.com/sites/default/files/Designing_a_Parallel_Game_Engine.pdf" rel="nofollow">Designing the Framework of a Parallel Game Engine</a></p>
+
+<h3><a name="1" id="1"></a>1. Introduction</h3>
+
+<p>With the advent of multiple cores within a processor the need to create a parallel game engine has become more and more important. It is still possible to focus primarily on just the GPU and have a single threaded game engine, but the advantage of utilizing all the processors on a system, whether CPU or GPU, can give a much greater experience for the user. For example, by utilizing more CPU cores a game could increase the number of rigid body physics object for greater effects on screen, or developing smarter AI that gives it a more human like behavior.</p>
+
+<h4><a name="1.1" id="1.1"></a>1.1. Overview</h4>
+
+<p>The “Parallel Game Engine Framework” or engine is a multi-threaded game engine that is designed to scale to as many processors as are available within a platform. It does this by executing different functional blocks in parallel so that it can utilize all available processors. This is easier said than done as there are many pieces to a game engine that often interact with one another and can cause many threading errors because of that. The engine takes these scenarios into account and has mechanisms for getting proper synchronization of data without having to be bound by synchronization locks. The engine also has a method for executing data synchronization in parallel in order to keep serial execution time at a minimum.</p>
+
+<h4><a name="1.2" id="1.2"></a>1.2. Assumptions</h4>
+
+<p>This paper assumes a good working knowledge of modern computer game development as well as some experience with game engine threading or threading for performance in general.</p>
+
+<h3><a name="2" id="2"></a>2. Parallel Execution State</h3>
+
+<p>The concept of a parallel execution state in an engine is crucial to an efficient multi-threaded runtime. In order for a game engine to truly run parallel, with as little synchronization overhead as possible, it will need to have each system operate within its own execution state with as little interaction as possible to anything else that is going on in the engine. Data still needs to be shared however, but now instead of each system accessing a common data location to say, get position or orientation data, each system has its own copy. This removes the data dependency that exists between different parts of the engine. Notices of any changes made by a system to shared data are sent to a state manager which then queues up all the changes, called messaging. Once the different systems are done executing, they are notified of the state changes and update their internal data structures, which is also part of messaging. Using this mechanism greatly reduces synchronization overhead, allowing systems to act more independently.</p>
+
+<h4><a name="2.1" id="2.1"></a>2.1. Execution Modes</h4>
+
+<p>Execution state management works best when operations are synchronized to a clock, meaning the different systems execute synchronously. The clock frequency may or may not be equivalent to a frame time and it is not necessary for it to be so. The clock time does not even have to be fixed to a specific frequency but could be tied to frame count, such that one clock step would be equal to how long it takes to complete one frame regardless of length. Depending on how you would like to implement your execution state will determine clock time. Figure 1 illustrates the different systems operating in free step mode of execution, meaning they all don’t have to complete their execution on the same clock. There is also a lock step mode of execution (see Figure 2) where all systems execution and complete in one clock.</p>
+
+<p align="center"><a name="fig1" id="fig1"></a><img alt=" Execution State using Free Step Mode" src="./Designing the Framework of a Parallel Game Engine _ Intel® Developer Zone_files/7951.jpg" title=" Execution State using Free Step Mode"><br><strong>Figure 1: </strong>Execution State using Free Step Mode</p>
+
+<h4><a name="2.1.1" id="2.1.1"></a>2.1.1. Free Step Mode</h4>
+
+<p>This mode of execution allows systems to operate in the time they need to complete their calculations. Free can be misleading as a system is not free to complete whenever it wants to, but is free to select the number of clocks it will need to execute.</p>
+
+<p>With this method a simple notification of a state change to the state manager is not enough, data will also need to be passed along with the state change notification. This is because a system that has modified shared data may still be executing when a system that wants the data is ready to do an update. This requires more memory and more copies to be used so may not be the most ideal mode for all situations.</p>
+
+<h4><a name="2.1.2" id="2.1.2"></a>2.1.2. Lock Step Mode</h4>
+
+<p>This mode requires that all systems complete their execution in a single clock. This is simpler to implement and does not require passing data with the notification because systems that are interested in a change made by another system can simply query the other system for the value (at the end of execution of course).</p>
+
+<p>Lock step can also implement a pseudo free step mode of operation by staggering calculations across multiple steps. One use of this is with an AI that will calculate its initial “large view” goal in the first clock but instead of just repeating the goal calculation for the next clock it can now come up with a more focused goal based on the initial goal.</p>
+
+<p align="center"><a name="fig2" id="fig2"></a><img alt=" Execution State using Lock Step Mode" src="./Designing the Framework of a Parallel Game Engine _ Intel® Developer Zone_files/7952.jpg" title=" Execution State using Lock Step Mode"><br><strong>Figure 2: </strong>Execution State using Lock Step Mode</p>
+
+<h4><a name="2.2" id="2.2"></a>2.2. Data Synchronization</h4>
+
+<p>It is possible for multiple systems to make changes to the same shared data. Because of this, something needs to be put in place in the messaging to determine which value would be the correct value to use. There are two such mechanisms that can be used:</p>
+
+<ul><li>Time, where the last system to make the change time-wise has the correct value.</li>
+	<li>Priority, where a system with a higher priority will be the one that has the correct value. This can also be combined with the time mechanism to resolve changes from systems of equal priority.</li>
+</ul><p>Data values that are determined to be stale, via the two mechanisms, will simply be overwritten or thrown out of the change notification queue.</p>
+
+<p>Because the data is shared, using relative values for data can prove to be difficult as some data may be order dependent when combining it. To alleviate this problem use absolute data values for those that require it so that when systems update their local values they just replace the old with the new. A combination of both absolute and relative data would be the most ideal and would depend on each specific situation. For example, common data, like position and orientation, should be kept absolute as creating a transformation matrix for it would depend on the order they are received, but a custom system that generated particles, via the graphics system, that fully owned the particle information could merely send relative value updates.</p>
+
+<h3><a name="3" id="3"></a>3. The Engine</h3>
+
+<p>The engine’s design is focused on flexibility, allowing for the simple expansion of its functionality. With that said, it can be easily modified to accommodate platforms that are constrained by certain factors, like memory, etc.<br>
+	The engine is broken up into two distinct pieces called the framework and the managers. The framework (section 3.1) contains the parts of the game that are duplicated, meaning there will be multiple instances of them. It also contains items that have to do with execution of the main game loop. The managers (section 3.2) are singletons that the game logic is dependent upon.</p>
+
+<p>The following diagram illustrates the different sections that make up the engine:</p>
+
+<p align="center"><a name="fig3" id="fig3"></a><img alt=" Engine High-Level Architecture" src="./Designing the Framework of a Parallel Game Engine _ Intel® Developer Zone_files/7953.jpg" title=" Engine High-Level Architecture"><br><strong>Figure 3: </strong>Engine High-Level Architecture</p>
+
+<p>Notice that the game processing functionality, referred to as a system, is treated as a separate entity from the engine. This is for the purpose of modularity, essentially making the engine the “glue” for tying in all the functionality together. Modularity also allows for the systems to loaded or unloaded as needed.</p>
+
+<p>The interfaces are the means of communication between the engine and the systems. Systems implement the interface so that the engine can get access to a system’s functionality, and the engine implements the interface so that the systems can access the managers.</p>
+
+<p>To get a clearer picture of this concept refer to Appendix A, “Example Engine Diagram”.</p>
+
+<p>As described in section 2, “Parallel Execution State”, the systems are inherently discrete. By doing this, systems can run in parallel without interfering with the execution of other systems. This does cause some problems when systems need to communicate with each other as data is not guaranteed to be in a stable state. Two reasons for inter system communication are:</p>
+
+<ul><li>To inform another system of a change it has made to shared data (e.g. position, or orientation),</li>
+	<li>To request for some functionality that is not available within the system (e.g. the AI system asking the geometry/physics system to perform a ray intersection test).</li>
+</ul><p>The first communication problem is solved by implementing the state manager described in the previous section. The state manager is discussed in more detail in section 3.2.2, “State Manager”.</p>
+
+<p>To rectify the second problem, a mechanism is included for a system to provide a service that a different system can use. For a more detailed description, you can reference section 3.2.3, “Service Manager”.</p>
+
+<h4><a name="3.1" id="3.1"></a>3.1. Framework</h4>
+
+<p>The framework is responsible for tying in all the different pieces of the engine together. Engine initialization occurs within the framework, with the exception of the managers which are globally instantiated. The information about the scene is also stored in the framework. For the purpose of flexibility the scene is implemented as what is called a universal scene which contains universal objects which are merely containers for tying together the different functional parts of a scene. More information on this is available in section 3.1.2.</p>
+
+<p>The game loop is also located within the framework and has the following flow:</p>
+
+<p align="center"><a name="fig4" id="fig4"></a><img alt=" Main Game Loop" src="./Designing the Framework of a Parallel Game Engine _ Intel® Developer Zone_files/7954.jpg" title=" Main Game Loop"><br><strong>Figure 4: </strong>Main Game Loop</p>
+
+<p>The first step in the game loop is to process all pending OS window messages as the engine operates in a windowed environment. The engine would be unresponsive to the OS if this was not done. The next step is for the scheduler to issue the systems’ tasks with the task manager. This is discussed in more detail in section 3.1.1 below. Next, the changes that the state manager (section 3.2.2) has been keeping track of are distributed to all interested parties. Finally, the framework checks the execution status to see if the engine should quit, or perform some other engine execution action like go to the next scene. The engine execution status is located in the environment manager which is discussed in section 3.2.4.</p>
+
+<h4><a name="3.1.1" id="3.1.1"></a>3.1.1. Scheduler</h4>
+
+<p>The scheduler holds the master clock for execution which is set at a pre-determined frequency. The clock can also run at an unlimited rate, for things like benchmarking mode, so that there is no waiting for the clock time to expire before proceeding.</p>
+
+<p>The scheduler submits systems for execution, via the task manager, on a clock tick. For free step mode (section 2.1.1), the scheduler communicates with the systems to determine how many clock ticks they will need to complete their execution and from there determines which systems are ready for execution and which systems will be done by a certain clock tick. This amount can be adjusted by the scheduler if it determines that a system needs more execution time. Lock step mode (section 2.1.2) has all systems start and end on the same clock, so the scheduler will wait for all systems to complete execution.</p>
+
+<h4><a name="3.1.2" id="3.1.2"></a>3.1.2. Universal Scene &amp; Objects</h4>
+
+<p>The universal scene and objects are containers for the functionality that is implemented within the systems. By themselves, the universal scene and objects do not possess any functionality other than the ability to interact with the engine. They can, however, be extended to include the functionality that is available in a system. This gives them the ability to take on the properties of any available system without having to be tied to a specific system giving it loose coupling. Loose coupling is important as it allows the systems to be independent of each other giving them the ability to run in parallel.<br>
+	The following diagram illustrates the universal scene and object extension of a system:</p>
+
+<p align="center"><a name="fig5" id="fig5"></a><img alt=" Universal Scene and Object Extension" src="./Designing the Framework of a Parallel Game Engine _ Intel® Developer Zone_files/7955.jpg" title=" Universal Scene and Object Extension"><br><strong>Figure 5: </strong>Universal Scene and Object Extension</p>
+
+<p>An example of how extensions work is as follows: A universal scene is extended to have graphics, physics, and other properties. The graphics scene extension would be responsible for initializing the display and other things, and the physics scene extension would be responsible for setting up the rigid body world, like gravity, etc. Scenes contain objects, so a universal scene would have several universal objects. A universal scene can also be extended to have graphics, physics, and other properties. The graphics object extension would be responsible for drawing the object on screen, and the physics object extension would be responsible for the rigid body interaction of the object with other rigid bodies.</p>
+
+<p>For a more detailed diagram on the relationship of the engine with the systems see Appendix B, “Engine and System Relationship Diagram”.</p>
+
+<p>Another thing to point out is that the universal scene and universal object are responsible for registering all their extensions with the state manager so that the extensions will get notified of changes made by other extensions (i.e. other systems). An example would be the graphics extension being registered to receive notification of position and orientation changes made by the physics extension.</p>
+
+<p>More information about the system’s components can be found in section 5.2, “System Components”.</p>
+
+<h4><a name="3.2" id="3.2"></a>3.2. The Managers</h4>
+
+<p>The managers provide global functionality within the engine and are implemented as singletons, meaning there will only be one instantiation made available for each type of manager. The reason they are singletons is because their resources should not be duplicated as they will cause redundancy and potential processing performance implications. They also provide common functionality that will be useable across all the systems.</p>
+
+<h4><a name="3.2.1" id="3.2.1"></a>3.2.1. Task Manager</h4>
+
+<p>The task manager handles scheduling of a system’s task within its thread pool. The thread pool creates one thread per processor to get the best possible n-way scaling to processors and prevents over subscription avoiding unnecessary task switching within the OS.</p>
+
+<p>The task manager receives its list of tasks to execute from the scheduler as well as which tasks to wait for execution to complete. The scheduler gets its list of tasks to execute from the different systems themselves. There will only be one primary task per system, this is commonly known as functional decomposition, but each primary task is allowed to issue as many sub-tasks as it wants to for operating on its data, which is called data decomposition.</p>
+
+<p>The following demonstrates how the task manager could issue tasks onto threads for execution on a quad core system:</p>
+
+<p align="center"><a name="fig6" id="fig6"></a><img alt=" Task Manager Thread Pool Example" src="./Designing the Framework of a Parallel Game Engine _ Intel® Developer Zone_files/7956.jpg" title=" Task Manager Thread Pool Example"><br><strong>Figure 6: </strong>Task Manager Thread Pool Example</p>
+
+<p>Aside from access by the scheduler for issuing of primary tasks, the task manager also has an initialization mode where it will call systems serially from each thread so that the systems can initialize any thread local storage they require for execution.</p>
+
+<p>For some help getting started on implementing a task manager, refer to Appendix D, “Tips on Implementing Tasks”.</p>
+
+<h4><a name="3.2.2" id="3.2.2"></a>3.2.2. State Manager</h4>
+
+<p>State management is part of the messaging mechanism that tracks and distributes change notifications made by a system to other interested systems. To reduce unnecessary change notification broadcasts, systems must register with the state manager for changes they are interested in receiving. This mechanism is based on the observer design pattern which is described in more detail in Appendix C, “The Observer Design Pattern”. In a nutshell, the observer design pattern has the basic premise of an observer observing a subject for any changes, with a change controller acts as a mediator between the two.</p>
+
+<p>This mechanism works as such: 1) The observer registers the subject it wants to observe with the change controller (or state manager), 2) when the subject has changed one of its properties it sends a change notification to the change controller, 3) the change controller, when told to by the framework, will distribute the change notifications of the subject to the observer, and 4) the observer will query the subject for the actual changed data.</p>
+
+<p>Free step mode of operation (section 2.1.1) introduces some extra complexities to this mechanism. Firstly, it will be necessary to include the data along with the change notification as a system that has modified shared data may still be executing and therefore cannot be queried for its value. Next, if a system is not yet ready to receive the changes at the end of a clock tick, the state manager will need to hold on to that data until all systems registered for it are finally ready to receive it.</p>
+
+<p>The framework implements two state managers, one for handling changes on the scene level and another for handling changes on the object level. The reason for this is that scenes and objects, for the most part, have different messages that are relevant to them so separating them removes the need to process unnecessary messages. However, any object changes that are relevant to the scene will be registered with the scene so that it will receive those change notifications.</p>
+
+<p>In order to remove any synchronization overhead, the state manager will have a change queue for each thread created by the task manager. This way there is no synchronization required when accessing the queue. The queues can then be merged after execution using the method described in section 2.2.</p>
+
+<p align="center"><a name="fig7" id="fig7"></a><img alt=" Internal UObject Change Notification" src="./Designing the Framework of a Parallel Game Engine _ Intel® Developer Zone_files/7959.jpg" title="fig7.jpg"><br><strong>Figure 7: </strong>Internal UObject Change Notification</p>
+
+<p>While you would think that change notifications would have to be distributed serially, it is possible to parallelize this action. When systems are executing their tasks they operate across all their objects. For example, the physics system would be moving around objects, checking for collisions, and setting new forces, etc. as physics object interact with each other. During change notification a system’s object is no longer interacting with other objects from its own system but is now interacting with other extensions in the universal object it is associated with. This means that universal objects are now independent of each other so each universal object can be updated in parallel. Take note, though, that there may be some corner cases that need to be accounted for with synchronization. Still, something that looked hopelessly serial can now get some parallelization.</p>
+
+<h4><a name="3.2.3" id="3.2.3"></a>3.2.3. Service Manager</h4>
+
+<p>The service manager provides access to functionality to systems that otherwise would not have such functionality. A thing to note is that the service manager does not provide this directly but has the interfaces defined for it and any systems that implement the exposed interface functionality will register themselves with the service manager.</p>
+
+<p>There is only a small set of services available as the design of the engine is to keep systems running as discretely as possible. Also, systems are not free to provide any service they so choose but only those provided for by the service manager.</p>
+
+<p align="center"><a name="fig8" id="fig8"></a><img alt=" Service Manager Example" src="./Designing the Framework of a Parallel Game Engine _ Intel® Developer Zone_files/7961.jpg" title=" Service Manager Example"><br><strong>Figure 8:</strong> Service Manager Example</p>
+
+<p>The service manager has another role of providing access to the properties of the different systems to each other. Properties are values of each system that are specific to a system and are therefore not passed in the messaging system. Some examples of these are the screen resolution of the graphics system, or the gravity value of the physics system. The service manager gives access to all these properties to the different systems without giving them direct control over them. It also makes it so that the property changes are queued up and are only issued during serial execution. Take note that accessing another system’s properties is a rare occurrence and should not be used as common practice. This is made available for things like the console window, for example, to turn on/off wireframe mode in the graphics system, or for the user interface system to change the screen resolution as requested by the user. They are essentially used for things that will not change from frame to frame.</p>
+
+<h4><a name="3.2.4" id="3.2.4"></a>3.2.4. Environment Manager</h4>
+
+<p>The environment manager provides the functionality for the engine’s running environment. The following is a list of the function groups provided by the environment manager:</p>
+
+<ul><li>Variables – variable names and data that are shared across the entire engine. The variables are usually set upon loading a scene or some user settings, and are queried in the engine and or by the different systems.</li>
+	<li>Execution – information about the execution, such as the end of a scene or end of the program. This can be set or queried for by either the engine or the systems.</li>
+</ul><h4><a name="3.2.5" id="3.2.5"></a>3.2.5. Platform Manager</h4>
+
+<p>The platform manager handles all abstraction of OS calls and also provides added functionality beyond just a simple abstraction. This gives the benefit of encapsulating several common functional steps within one call instead of all the callers having to implement them or know about the nuances of the OS calls.</p>
+
+<p>An example of this is the call in the platform manager to load a system’s dynamic library. Aside from loading a system in, it also gets the function entry points and then calls the library’s initialization function. It will also keep around a handle to the library and then unloads it upon exit of the engine.</p>
+
+<p>The platform manager is also responsible for providing information about the processor, such as which SIMD instructions are supported and some others, and initializing some of the behavior for the process. This is a query only functionality that systems can use.</p>
+
+<h3><a name="4" id="4"></a>4. Interfaces</h3>
+
+<p>The interfaces are the means of communication between the framework, the managers, and the systems. The framework and the managers reside within the engine and therefore the framework has direct access to the managers. The systems, however, reside outside of the engine and have different functionality from each other making it necessary to have a common method for accessing them. Also, the systems do not have direct access to the managers so they also need a method for accessing the managers but not necessarily the full functionality as certain items should only be accessible to the framework.</p>
+
+<p>The interfaces provide a set functionality that needs to be implemented in order to have a common method of access. This makes it unnecessary for the framework to know the details about a specific system as it can communicate to it through a known set of calls.</p>
+
+<h4><a name="4.1" id="4.1"></a>4.1. Subject and Observer Interfaces</h4>
+
+<p>The subject and observer interfaces are used for the registration of the observer with the subject and for passing of change notifications from the subject to the observer. A default subject implementation is also provided as the functionality to handle observer registration/de-registration is common to all subjects.</p>
+
+<h4><a name="4.2" id="4.2"></a>4.2. Manager Interfaces</h4>
+
+<p>The managers, even though they are singletons, are only directly available to the framework which means that the different systems do not have access to them. In order to provide access, each manager would have an interface that exposes a subset of its functionality. The interface would then be passed to the system when it gets initialized and the systems would then have access to a subset of the manager.</p>
+
+<p>The interface defined is dependent upon the manager and therefore is not a common interface but specific to that manager.</p>
+
+<h4><a name="4.3" id="4.3"></a>4.3. System Interfaces</h4>
+
+<p>The systems need to implement interfaces in order for the framework to get access to its components. Without it the framework would have to implement a specific implementation of each new system that gets added to the engine.<br>
+	There are four components to a system so there are four interfaces a system must implement. They are: System, Scene, Object, and Task. These different components are covered in section 5, “Systems”. The interfaces are the means of getting these components. The System interface provides methods for creating and destroying scenes. Scene interfaces provide methods for creating and destroying objects and a method for retrieving the primary task. The Task interface is used by the task manager when issuing tasks within its thread pool.</p>
+
+<p>The scene and object interfaces also derive from the subject and observer interfaces as these are the pieces of the system that need to communicate with one another, and with the universal scene and object they are attached to.</p>
+
+<h4><a name="4.4" id="4.4"></a>4.4. Change Interfaces</h4>
+
+<p>There are also some special interfaces that are used for passing data between the systems. Any systems that make these specific modifications must also implement the interface. An example of this kind of interface is geometry. The geometry interface would have methods for retrieving the position, orientation, and scale for a certain item. Any systems that make modifications to geometry would need to implement this interface so that a different system would be able to access the geometry changes without needing to know about the other system.</p>
+
+<h3><a name="5" id="5"></a>5. Systems</h3>
+
+<p>The systems are what provide the game functionality to the engine. Without them the engine would just spin endlessly without any tasks to perform. In order to keep the engine from having to know about all the different system types, systems must implement the interfaces described in section 4.3, “System Interfaces”. This makes it much simpler to add a new system to the engine since the engine won’t need to know about the details.</p>
+
+<h4><a name="5.1" id="5.1"></a>5.1. Types</h4>
+
+<p>The engine should have some predefined systems types that go along with them for standard game components. Some examples are as follows: Geometry, Graphics, Physics (rigid body collision), Audio, Input, AI, and Animation.</p>
+
+<p>A custom type is also recommended for systems that implement functionality outside of the common functional blocks in a game. Take note that any systems that modify the custom type’s specific data items will need to know about the custom type’s interface as the engine does not provide this information.</p>
+
+<h4><a name="5.2" id="5.2"></a>5.2. System Components</h4>
+
+<p>A system has several components to it that need to be implemented. They are as follows: System, Scene, Object, and Task. These components are all used to communicate with the different sections within the engine.<br>
+	The following diagram demonstrates the relationship between the components:</p>
+
+<p align="center"><a name="fig9" id="fig9"></a><img alt=" System Components" src="./Designing the Framework of a Parallel Game Engine _ Intel® Developer Zone_files/7962.jpg" title=" System Components"><br><strong>Figure 9:</strong> System Components</p>
+
+<p>For a more detailed diagram on the relationship of the systems with the engine, refer to Appendix A, “Engine and System Relationship Diagram”.</p>
+
+<h4><a name="5.2.1" id="5.2.1"></a>5.2.1. System</h4>
+
+<p>The system component, or system, is responsible for initializing system resources that will remain more or less constant throughout the execution of the engine. An example of this is the graphics system analyzing all the passed in resource locations to determine where they are located for quicker loading upon use of the resource. The screen resolution would also be another item set by the graphics system.</p>
+
+<p>The system is also the main entry point for the framework and provides information about itself, such as its type, and provides methods for creation and destruction of scenes.</p>
+
+<h4><a name="5.2.2" id="5.2.2"></a>5.2.2. Scene</h4>
+
+<p>The scene component, otherwise known as a system scene, is responsible for handling resources that are pertinent to the existing scene. The universal scene uses this scene as an extension of its functionality to make available the properties this system scene provides. An example of this component is the physics scene creating a new world and setting the gravity for the world upon scene initialization.</p>
+
+<p>The scene also provides methods for creation and destruction of objects. It also owns the task component, which is used to operate on the scene, and provide a method for retrieving it.</p>
+
+<h4><a name="5.2.3" id="5.2.3"></a>5.2.3. Object</h4>
+
+<p>The object component, alternatively a. system object, is an object within the scene and is typically associated with what is visible to the user on screen. The universal object uses this object component as an extension of its functionality to allow the properties this object provides to be exposed via the universal object.</p>
+
+<p>An example of how this could be used is a universal object extending geometry, graphics, and physics to create a beam of wood on screen. The geometry would hold the position, orientation, and scale information of the object, the graphics system would display it on screen using the given mesh, and the physics system would apply rigid body collision to it so that it would interact with other rigid body objects and gravity.</p>
+
+<p>In certain situations a system object may be interested in the changes of a different universal object, or one of its extensions. In this case a link can be established so that the system object can observe the other object.</p>
+
+<h4><a name="5.2.4" id="5.2.4"></a>5.2.4. Task</h4>
+
+<p>The task component, referred to as a system task, is responsible for operating on the scene. When the task receives a command to update, from the task manager, it will perform the system’s functionality on the objects within the scene.<br>
+	The task can also choose to subdivide its execution into subtasks and schedule the subtasks with the task manager for even more threaded execution. Doing this allows the engine to scale more readily to a configuration with multiple processors. This technique is known as data decomposition.</p>
+
+<p>During the task’s update of the scene is when any modifications done to its objects are posted to the state manager. Refer to section 3.2.2 for more information about the state manager.</p>
+
+<h3><a name="6" id="6"></a>6. Tying It All Together</h3>
+
+<p>This is a lot of information to absorb all at once, and the different sections aren’t really separate from one another. The entire engine execution can be broken up into several stages as described in the following sections.</p>
+
+<h4><a name="6.1" id="6.1"></a>6.1. Initialization Stage</h4>
+
+<p>Engine execution begins by initializing the managers and the framework.</p>
+
+<ul><li>The framework calls the scene loader to load in the scene.</li>
+	<li>The loader determines what systems the scene is using then calls the platform manager to load those modules.</li>
+	<li>The platform manager loads the modules, passes in the manager interfaces, then calls into them to create a new system.</li>
+	<li>The module returns a pointer to the instantiated system which implements the system interface.</li>
+	<li>The system module will also register any services it provides with the service manager.</li>
+</ul><p align="center"><a name="fig10" id="fig10"></a><img alt=" Engine Manager and System Initialization" src="./Designing the Framework of a Parallel Game Engine _ Intel® Developer Zone_files/7965.jpg" title=" Engine Manager and System Initialization"><br><strong>Figure 10: </strong>Engine Manager and System Initialization</p>
+
+<h4><a name="6.2" id="6.2"></a>6.2. Scene Loading Stage</h4>
+
+<p>Control returns to the loader which loads the scene.</p>
+
+<ul><li>The loader creates a universal scene and calls each system interface to instantiate system scenes, extending the functionality of the universal scene.</li>
+	<li>The universal scene checks each system scene for what shared data changes they could possibly make and what shared data changes they would like to receive.</li>
+	<li>The universal scene then registers the matching system scenes with the state manager so that they will be notified of the changes.</li>
+	<li>The loader creates a universal object for each object in the scene and determines which systems will be extending the universal object. The universal object follows a similar system object registration pattern with the state manager as that of the universal scene.</li>
+	<li>The loader instantiates system objects via the system scene interfaces it previously received and extends the universal objects with the system objects.</li>
+	<li>The scheduler then queries the system scene interfaces for their primary tasks because the scheduler is responsible for issuing the primary tasks to the task manager during execution.</li>
+</ul><p align="center"><a name="fig11" id="fig11"></a><img alt=" Universal Scene and Object Initialization" src="./Designing the Framework of a Parallel Game Engine _ Intel® Developer Zone_files/7964.jpg" title=" Universal Scene and Object Initialization"><br><strong>Figure 11: </strong>Universal Scene and Object Initialization</p>
+
+<h4><a name="6.3" id="6.3"></a>6.3. Game Loop Stage</h4>
+
+<ul><li>The platform manager is called to process all window messages and/or other platform specific items that are needed for operation on the current platform.</li>
+	<li>Execution is then transferred to the scheduler, which waits for the clock time to expire before proceeding.</li>
+	<li>The scheduler, for free step mode, checks which of the system tasks completed execution in the previous clock. All tasks that are done (i.e. ready to execute) get issued to the task manager.</li>
+	<li>The scheduler will now determine which tasks will complete on the current clock and waits for completion of those tasks.</li>
+	<li>For lock step mode, the scheduler issues all tasks and waits for them to complete for each clock step.</li>
+</ul><h4><a name="6.3.1" id="6.3.1"></a>6.3.1. Task Execution</h4>
+
+<p>Execution is transferred to the task manager.</p>
+
+<ul><li>The task manager queues up all tasks submitted to it and starts processing each task as threads become available. (Task processing is specific to each system. Systems can operate using only one task or they can issue more tasks which get queued in the task manager, thus potentially getting executed in parallel).</li>
+	<li>As tasks execute they will operate on the entire scene or on specific objects and modify their internal data structures.</li>
+	<li>Any data that is considered as shared, like position and orientation, needs to get propagated to the other systems. The system task does this by having the system scene or system object (whichever was changed) inform their observer of the change. In this case the observer is actually the change controller located in the state manager.</li>
+	<li>The change controller queues up the change information to be processed later, but change types that the observer is not interested in are simply ignored.</li>
+	<li>If the task needs any services it goes through the service manager to call into the provided service. The service manager can also be used to change the property of a different system that isn’t exposed via the messaging mechanism (e.g. the user input system changes the screen resolution of the graphics system).</li>
+	<li>Tasks can also call into the environment manager to read environment variables, change the runtime state (e.g. pause execution, go to next scene, etc.).</li>
+</ul><p align="center"><a name="fig12" id="fig12"></a><img alt=" Task Manager and Tasks" src="./Designing the Framework of a Parallel Game Engine _ Intel® Developer Zone_files/7966.jpg" title=" Task Manager and Tasks"><br><strong>Figure 12: </strong>Task Manager and Tasks</p>
+
+<h4><a name="6.3.2" id="6.3.2"></a>6.3.2. Distribution</h4>
+
+<p>Once all tasks targeted for the current clock have completed execution, the main loop calls the state manager to distribute the changes.</p>
+
+<ul><li>The state manager calls each of its change controllers to distribute the changes they have queued up. This is done by going through each subject’s changes and seeing which observer was listening to that subject.</li>
+	<li>The change controller then calls the observer informing it of the change (a pointer to the subject’s interface is also passed to the observer). For free step mode, the observer gets the changed data from the change controller, but for lock step mode the observer queries the subject for the data.</li>
+	<li>The observers that are interested in the changes done by a system object will typically be other system objects that are all attached to the same universal object. This makes it possible for the change distribution to be broken up into tasks for execution in parallel. To limit synchronization, group together in a task any universal objects’ extensions that are linked.</li>
+</ul><h4><a name="6.3.3" id="6.3.3"></a>6.3.3. Runtime Check and Exit</h4>
+
+<p>The final step of the main loop is to check the runtime’s state. There are several runtime states like: run, pause, next scene, etc. If the runtime state is set to run it will repeat the entire game loop. If the runtime is set to exit then it exits the game loop, frees up resources, and exits the application. Other runtime states can be implemented like pause, go to next scene, etc.</p>
+
+<h3><a name="7" id="7"></a>7. Final Thoughts</h3>
+
+<p>The key takeaway from all of this is section 2, “Parallel Execution State”. Designing systems for functional decomposition, coupled with data decomposition will deliver a good amount of parallelization and will also ensure scalability with future processors with an even larger amount of cores. Remember to use the state manager along with the messaging mechanism to keep all data in sync with only minimal synchronization overhead.</p>
+
+<p>The observer design pattern is a function of the messaging mechanism and some time should be spent learning it so that the most efficient design possible can be implemented to address the needs of your engine. After all, it is the mechanism of communication between the different systems to synchronize all shared data.</p>
+
+<p>Tasking plays an important role in proper load balancing. Following the tips in Appendix D will help you create an efficient task manager for your engine.</p>
+
+<p>As you can see, designing a highly parallel engine is manageable by using clearly defined messaging and structure. Properly building parallelism into your game engine will give it significant performance gains on modern and all future processors.</p>
+
+<h3><a name="8" id="8"></a>8. About the Author</h3>
+
+<p>Jeff Andrews is an Application Engineer with Intel working on optimizing code for software developers, currently focused on PC gaming. He also researches different technologies for enhancing performance or for adding new features to games, which included a role of lead architect for Intel’s Smoke demo framework.</p>
+
+<h3><a name="A" id="A"></a>Appendix A. Example Engine Diagram</h3>
+
+<p>The main game loop begins processing (see Figure 4, “Main Game Loop” for a graphical representation of this).</p>
+
+<p><img alt="Appendix A. Example Engine Diagram" src="./Designing the Framework of a Parallel Game Engine _ Intel® Developer Zone_files/7948.jpg" title="Appendix A. Example Engine Diagram"></p>
+
+<h3><a name="B" id="B"></a>Appendix B. Engine and System Relationship Diagram</h3>
+
+<p><img alt="Appendix B. Engine and System Relationship Diagram" src="./Designing the Framework of a Parallel Game Engine _ Intel® Developer Zone_files/7949.jpg" title="Appendix B. Engine and System Relationship Diagram"></p>
+
+<h3><br><a name="C" id="C"></a>Appendix C. The Observer Design Pattern</h3>
+
+<p>The observer design pattern is documented in the book “Design Patterns: Elements of Reusable Object-Oriented Software,” written by Erich Gamma et al., and originally published by Addison-Wesley in 1995.</p>
+
+<p>The basic premise of this pattern is that any items interested in data or state changes in other items are not burdened with having to poll the items from time to time to see if there are any changes. The pattern defines a subject and an observer that are used for the change notification. It works by having an observer observe a subject for any changes. The change controller acts as a mediator between the two. The following diagram illustrates the relationship:</p>
+
+<p align="center"><a name="fig13" id="fig13"></a><img alt=" Observer Design Pattern" src="./Designing the Framework of a Parallel Game Engine _ Intel® Developer Zone_files/7950.jpg" title=" Observer Design Pattern"><br><strong>Figure 13:</strong> Observer Design Pattern</p>
+
+<p><strong>The following is the flow of events:</strong></p>
+
+<ol><li>The observer registers itself with the subject that it wants to observe changes for via the change controller.</li>
+	<li>The change controller is actually an observer. Instead of registering the observer with the subject it registers itself with the subject and keeps its own list of which observers are registered with which subject.</li>
+	<li>The subject inserts the observer (actually the change controller) in its list of observers that are interested in it; optionally there can also be a change type which identifies what type of changes the observer is interested in – this helps speed up the change notification distribution process.</li>
+	<li>When the subject makes a change to its data or state it notifies the observer via a callback mechanism and passes information of the types that were changed.</li>
+	<li>The change controller queues up the change notifications and waits for the signal to distribute them.</li>
+	<li>During distribution the change controller calls the actual observers.</li>
+	<li>The observers query the subject for the changed data or state (or get the data from the message).</li>
+	<li>When the observer is no longer interested in the subject or is being destroyed, it deregisters itself from the subject via the change controller.</li>
+</ol><h3><a name="D" id="D"></a>Appendix D. Tips on Implementing Tasks</h3>
+
+<p>While task distribution can be implemented in many different ways, it is best to keep the number of worker threads equal to the number of available logical processors of the platform. Avoid setting the affinity of tasks to a specific thread as the tasks from the different systems will not complete at the same time and can lead to a load imbalance among the worker threads, effectively reducing your parallelization. It will also be worth your while to investigate using a tasking library, like Intel’s Threading Building Blocks for example, which can simplify this process.</p>
+
+<p>There are some optimizations that can be done in the task manager to ensure CPU friendly execution of the different task submitted. They are as follows:</p>
+
+<ul><li>Reverse Issuing, if the order of primary tasks being issued is fairly static, the tasks can then be alternately issued in reverse order from frame to frame. The last task to execute in a previous frame will more than likely still have its data in the cache, so by issuing the tasks in reverse order for the next frame it will all but guarantee that the CPU caches will not have to be repopulated with the correct data.</li>
+	<li>Cache Sharing, some multi-core processors have their shared cache split into sections so that two processors may share a cache, while another two share a separate cache. By issuing sub-tasks from the same system onto processors sharing a cache it will increase the likelihood that the data will already be in the shared cache.</li>
+</ul><h3><a name="list" id="list"></a>List of Figures</h3>
+
+<p><a href="https://software.intel.com/en-us/articles/designing-the-framework-of-a-parallel-game-engine/#fig1" rel="nofollow">Figure 1</a>: Execution State using Free Step Mode 5<br><a href="https://software.intel.com/en-us/articles/designing-the-framework-of-a-parallel-game-engine/#fig2" rel="nofollow">Figure 2</a>: Execution State using Lock Step Mode 6<br><a href="https://software.intel.com/en-us/articles/designing-the-framework-of-a-parallel-game-engine/#fig3" rel="nofollow">Figure 3</a>: Engine High-Level Architecture 8<br><a href="https://software.intel.com/en-us/articles/designing-the-framework-of-a-parallel-game-engine/#fig4" rel="nofollow">Figure 4</a>: Main Game Loop 9<br><a href="https://software.intel.com/en-us/articles/designing-the-framework-of-a-parallel-game-engine/#fig5" rel="nofollow">Figure 5</a>: Universal Scene and Object Extension 10<br><a href="https://software.intel.com/en-us/articles/designing-the-framework-of-a-parallel-game-engine/#fig6" rel="nofollow">Figure 6</a>: Task Manager Thread Pool Example 11<br><a href="https://software.intel.com/en-us/articles/designing-the-framework-of-a-parallel-game-engine/#fig7" rel="nofollow">Figure 7</a>: Internal UObject Change Notification 12<br><a href="https://software.intel.com/en-us/articles/designing-the-framework-of-a-parallel-game-engine/#fig8" rel="nofollow">Figure 8</a>: Service Manager Example 13<br><a href="https://software.intel.com/en-us/articles/designing-the-framework-of-a-parallel-game-engine/#fig9" rel="nofollow">Figure 9</a>: System Components 17<br><a href="https://software.intel.com/en-us/articles/designing-the-framework-of-a-parallel-game-engine/#fig10" rel="nofollow">Figure 10</a>: Engine Manager and System Initialization 19<br><a href="https://software.intel.com/en-us/articles/designing-the-framework-of-a-parallel-game-engine/#fig11" rel="nofollow">Figure 11</a>: Universal Scene and Object Initialization 19<br><a href="https://software.intel.com/en-us/articles/designing-the-framework-of-a-parallel-game-engine/#fig12" rel="nofollow">Figure 12</a>: Task Manager and Tasks 20<br><a href="https://software.intel.com/en-us/articles/designing-the-framework-of-a-parallel-game-engine/#fig13" rel="nofollow">Figure 13</a>: Observer Design Pattern 25</p>
+
+<h3><a name="bibliography" id="bibliography"></a>Bibliography</h3>
+
+<p>Gamma, E., Helm, R., Johnson, R., Vlissides, J., (1995-2000). Design Patterns: Elements of Reusable Object-Oriented Software. USA: Addison-Wesley.<br>
+	Intel® Threading Building Blocks (TBB) Home Page. Available from:<br>
+	&lt;<a href="http://www.threadingbuildingblocks.org/" rel="nofollow">http://www.threadingbuildingblocks.org</a>&gt;</p>
+</div></div></div><div class="field field-name-field-protected-attachments field-type-file field-label-hidden"><div class="field-items"></div></div>
+</article>
+        
+                  <div class="optimization-notice">For more complete information about compiler optimizations, see our <a href="https://software.intel.com/en-us/articles/optimization-notice#opt-en">Optimization Notice</a>.</div>
+        
+                  <fieldset id="article-taxo-wrap" class="form-wrapper"><div class="fieldset-wrapper">Categories: <ul id="article-taxo-wrap-list">
+          <li class="field-item even">
+        <a href="https://software.intel.com/en-us/search/site/field_topic/game_development-20863/language/en">Game Development</a>      </li>
+          <li class="field-item odd">
+        <a href="https://software.intel.com/en-us/search/site/field_topic/graphics-20864/language/en">Graphics</a>      </li>
+          <li class="field-item even">
+        <a href="https://software.intel.com/en-us/search/site/field_topic/parallel_computing-20867/language/en">Parallel Computing</a>      </li>
+          <li class="field-item odd">
+        <a href="https://software.intel.com/en-us/search/site/field_topic/threading-20869/language/en">Threading</a>      </li>
+    
+
+          <li class="field-item even">
+        <a href="https://software.intel.com/en-us/search/site/field_platform/game_development-78391/language/en">Game Development</a>      </li>
+    
+
+          <li class="field-item even">
+        <a href="https://software.intel.com/en-us/search/site/field_form_factor/laptop-42645/language/en">Laptop</a>      </li>
+          <li class="field-item odd">
+        <a href="https://software.intel.com/en-us/search/site/field_form_factor/tablet-42648/language/en">Tablet</a>      </li>
+          <li class="field-item even">
+        <a href="https://software.intel.com/en-us/search/site/field_form_factor/desktop-42644/language/en">Desktop</a>      </li>
+    
+
+          <li class="field-item even">
+        <a href="https://software.intel.com/en-us/search/site/field_audience/developers-17152/language/en">Developers</a>      </li>
+    
+
+          <li class="field-item even">
+        <a href="https://software.intel.com/en-us/search/site/field_skill_level/advanced-20809/language/en">Advanced</a>      </li>
+          <li class="field-item odd">
+        <a href="https://software.intel.com/en-us/search/site/field_skill_level/intermediate-20808/language/en">Intermediate</a>      </li>
+    
+</ul></div></fieldset>
+        
+                  <fieldset id="article-tags-wrap" class="form-wrapper"><div class="fieldset-wrapper">Tags: <ul id="article-tags-wrap-list">
+          <li class="field-item even" rel="dc:subject">
+        <a href="https://software.intel.com/en-us/search/site/field_tags/physics-17764/language/en">physics</a>      </li>
+          <li class="field-item odd" rel="dc:subject">
+        <a href="https://software.intel.com/en-us/search/site/field_tags/visual_computing-17238/language/en">visual computing</a>      </li>
+          <li class="field-item even" rel="dc:subject">
+        <a href="https://software.intel.com/en-us/search/site/field_tags/game_engine-20086/language/en">game engine</a>      </li>
+          <li class="field-item odd" rel="dc:subject">
+        <a href="https://software.intel.com/en-us/search/site/field_tags/parallel_game_engine-80381/language/en">parallel game engine</a>      </li>
+          <li class="field-item even" rel="dc:subject">
+        <a href="https://software.intel.com/en-us/search/site/field_tags/game_engine_architecture-36556/language/en">Game Engine Architecture</a>      </li>
+          <li class="field-item odd" rel="dc:subject">
+        <a href="https://software.intel.com/en-us/search/site/field_tags/multicore_architecture-41564/language/en">Multi-core Architecture</a>      </li>
+    
+</ul></div></fieldset>
+        
+                   <div id="button-links-wrap" class="clearfix"><div class="item-list"></div></div>
+        
+        
+              </section>
+
+                  <aside class="l-sidebar-second">
+          <section class="region region-sidebar-second column sidebar">
+    <div id="block-idz-responsive-blocks-idz-responsive-subnav" class="block block-idz-responsive-blocks first odd">
+
+      
+  <ul><li><a href="https://software.intel.com/en-us/gamedev">Game Development</a></li><li><a href="https://software.intel.com/en-us/forums/developing-software-for-visual-computing">Forum</a></li></ul>
+</div>
+<div id="block-idz-articles-translate-button" class="block block-idz-articles last even">
+
+      
+  <a href="https://software.intel.com/en-us/articles/designing-the-framework-of-a-parallel-game-engine/#disclaimer-link"></a><div id="MicrosoftTranslatorWidget" class="Dark" translate="no" style="background-color: transparent;"><div id="WidgetLauncher" style="direction: ltr;"><div id="LauncherTranslatePhrase" class="WidgetEnabled" style="background-color: rgba(0, 0, 0, 0);" title="Translate To English"><span id="TranslateSpan">TRANSLATE</span></div><div id="LauncherLogo" class="WithPhraseAfter"><a id="LauncherLogoLink" href="https://www.bing.com/translator" target="_blank" title="//www.bing.com/translator"><img id="LauncherLogoImage" src="./Designing the Framework of a Parallel Game Engine _ Intel® Developer Zone_files/binglogo_dark.png"></a></div></div></div><script type="text/javascript">setTimeout(function(){{var s=document.createElement('script');s.type='text/javascript';s.charset='UTF-8';s.src=((location && location.href && location.href.indexOf('https') == 0)?'https://ssl.microsofttranslator.com':'http://www.microsofttranslator.com')+'/ajax/v3/WidgetV3.ashx?siteData=ueOIGRSKkd965FeEGM5JtQ**&ctf=False&ui=true&category=70adf6fd-a86d-4c27-af86-11655f788400_TECH&settings=Manual&languages=es,pt,fr,it,tr,zh-CHS,zh-CHT,ru,de,en';var p=document.getElementsByTagName('head')[0]||document.documentElement;p.insertBefore(s,p.firstChild); }},0);</script>
+    <div class="disclaimer">
+        <div class="disclaimer-link" id="disclaimer-link" style="display:block"><img src="./Designing the Framework of a Parallel Game Engine _ Intel® Developer Zone_files/warning_sign.gif" id="warning" height="13" width="13"> Disclaimer</div>
+        <div id="disclaimer-text">Using this translation widget will provide you with a machine translation of the original content. The machine translation is provided for informational purposes only; it should not be relied upon as complete or accurate.</div>
+    </div>
+</div>
+  </section>
+      </aside>
+      
+          </div>
+
+  </div>
+
+            <div class="comments-wrapper">
+                           <section id="comments" class="comments comment-wrapper">
+
+        <div class="title-wrapper clearfix">
+      <h2 class="comments__title title">Comments <span class="comment-count">(18)</span></h2>
+      <a href="https://software.intel.com/en-us/articles/designing-the-framework-of-a-parallel-game-engine/#" class="to-top"><span class="icon-caret-up">Top</span></a>
+    </div>
+    
+  <a id="comment-1827241"></a>
+<article class="comment first odd clearfix" about="/en-us/comment/1827241#comment-1827241" typeof="sioc:Post sioct:Comment">
+  <header>
+    <p class="submitted">
+      <span property="dc:date dc:created" content="2015-06-05T01:10:22-07:00" datatype="xsd:dateTime" rel="sioc:has_creator"><a href="https://software.intel.com/en-us/user/1156615" title="View user profile." class="username" xml:lang="" about="/en-us/user/1156615" typeof="sioc:UserAccount" property="foaf:name" datatype="">Du X.</a> said on <time pubdate="" datetime="2015-06-05T01:10:22-07:00">Fri, 06/05/2015 - 01:10</time></span>    </p>
+
+            
+      </header>
+
+  <div class="comment-content-wrapper">
+    <span class="user-picture">
+    <a href="https://software.intel.com/en-us/user/1156615" title="View user profile."><img typeof="foaf:Image" src="./Designing the Framework of a Parallel Game Engine _ Intel® Developer Zone_files/profile.jpg" alt="Du X.&#39;s picture" title="Du X.&#39;s picture"></a>  </span>
+
+    <div class="comment-content">
+    <span rel="sioc:reply_of" resource="/en-us/articles/designing-the-framework-of-a-parallel-game-engine" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Nice work！I am working on optimise our game with threading。This surely &nbsp;will benefit me。</p>
+<p>I readed the paper &lt;Threading the OGRE3DRender System&gt; yesterday, it is also your work, is'nt it?</p>
+<p>But I can't find the source code for the article, the link is broken there.<span>&nbsp;</span><a href="http://www.intel.com/cd/ids/developer/asmo-na/eng/331359.htm">http://www.intel.com/cd/ids/developer/asmo-na/eng/331359.htm</a>&nbsp;. The page seems removed.</p>
+<p>would you kindly give me another available link, or send me <span>&nbsp;the article and&nbsp;</span>source code to my gmail : niceboyduxg@gmail.com. &nbsp;Thank you very much</p>
+</div></div></div>    <div class="comment-contextual-links">
+      <span class="icon-edit"></span>
+      <ul class="links inline"><li class="comment_forbidden first last"><span><a href="https://software.intel.com/en-us/user/login?destination=node/155986%23comment-form">Log in</a> to post comments</span></li>
+</ul>    </div>
+    </div>
+
+  </div>
+
+</article>
+<a id="comment-1151343"></a>
+<article class="comment even clearfix" about="/en-us/comment/1151343#comment-1151343" typeof="sioc:Post sioct:Comment">
+  <header>
+    <p class="submitted">
+      <span property="dc:date dc:created" content="2011-11-05T13:04:23-07:00" datatype="xsd:dateTime" rel="sioc:has_creator"><a href="https://software.intel.com/en-us/user/452166" title="View user profile." class="username" xml:lang="" about="/en-us/user/452166" typeof="sioc:UserAccount" property="foaf:name" datatype="">crazii</a> said on <time pubdate="" datetime="2011-11-05T13:04:23-07:00">Sat, 11/05/2011 - 13:04</time></span>    </p>
+
+            
+      </header>
+
+  <div class="comment-content-wrapper">
+    <span class="user-picture">
+    <a href="https://software.intel.com/en-us/user/452166" title="View user profile."><img typeof="foaf:Image" src="./Designing the Framework of a Parallel Game Engine _ Intel® Developer Zone_files/profile.jpg" alt="crazii&#39;s picture" title="crazii&#39;s picture"></a>  </span>
+
+    <div class="comment-content">
+    <span rel="sioc:reply_of" resource="/en-us/articles/designing-the-framework-of-a-parallel-game-engine" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Years later now, I got a way better understanding on this.Maybe some ideas are different in details,but I get right the whole picture,and I'd say that this article is awesome!<br>
+The TBB::task is so cool,lightweight,that's all I need for the task-manager.<br>
+the systems are almost running without any synchronization overhead.<br>
+Thanks again!</p>
+</div></div></div>    <div class="comment-contextual-links">
+      <span class="icon-edit"></span>
+      <ul class="links inline"><li class="comment_forbidden first last"><span><a href="https://software.intel.com/en-us/user/login?destination=node/155986%23comment-form">Log in</a> to post comments</span></li>
+</ul>    </div>
+    </div>
+
+  </div>
+
+</article>
+<a id="comment-1151342"></a>
+<article class="comment comment-by-anonymous odd clearfix" about="/en-us/comment/1151342#comment-1151342" typeof="sioc:Post sioct:Comment">
+  <header>
+    <p class="submitted">
+      <span property="dc:date dc:created" content="2010-05-13T09:44:47-07:00" datatype="xsd:dateTime" rel="sioc:has_creator">Anonymous said on <time pubdate="" datetime="2010-05-13T09:44:47-07:00">Thu, 05/13/2010 - 09:44</time></span>    </p>
+
+            
+      </header>
+
+  <div class="comment-content-wrapper">
+    <span class="user-picture">
+    <img typeof="foaf:Image" src="./Designing the Framework of a Parallel Game Engine _ Intel® Developer Zone_files/profile.jpg" alt="&#39;s picture" title="&#39;s picture">  </span>
+
+    <div class="comment-content">
+    <span rel="sioc:reply_of" resource="/en-us/articles/designing-the-framework-of-a-parallel-game-engine" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>This architecture is flawed.</p>
+<p>It allows different systems to submit sub-tasks into the queue, presumably for execution by an available worker thread.</p>
+<p>This means that you can have multiple threads working on any one system. What this means is that memory that each system has is being affected by multiple threads.</p>
+<p>That invites a lot of concurrency problems.</p>
+</div></div></div>    <div class="comment-contextual-links">
+      <span class="icon-edit"></span>
+      <ul class="links inline"><li class="comment_forbidden first last"><span><a href="https://software.intel.com/en-us/user/login?destination=node/155986%23comment-form">Log in</a> to post comments</span></li>
+</ul>    </div>
+    </div>
+
+  </div>
+
+</article>
+<a id="comment-1151341"></a>
+<article class="comment even clearfix" about="/en-us/comment/1151341#comment-1151341" typeof="sioc:Post sioct:Comment">
+  <header>
+    <p class="submitted">
+      <span property="dc:date dc:created" content="2009-11-02T01:07:58-08:00" datatype="xsd:dateTime" rel="sioc:has_creator"><a href="https://software.intel.com/en-us/user/452166" title="View user profile." class="username" xml:lang="" about="/en-us/user/452166" typeof="sioc:UserAccount" property="foaf:name" datatype="">crazii</a> said on <time pubdate="" datetime="2009-11-02T01:07:58-08:00">Mon, 11/02/2009 - 01:07</time></span>    </p>
+
+            
+      </header>
+
+  <div class="comment-content-wrapper">
+    <span class="user-picture">
+    <a href="https://software.intel.com/en-us/user/452166" title="View user profile."><img typeof="foaf:Image" src="./Designing the Framework of a Parallel Game Engine _ Intel® Developer Zone_files/profile.jpg" alt="crazii&#39;s picture" title="crazii&#39;s picture"></a>  </span>
+
+    <div class="comment-content">
+    <span rel="sioc:reply_of" resource="/en-us/articles/designing-the-framework-of-a-parallel-game-engine" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Hello,I'm new here,now I'm just writing something to learn the engine design stuff,especially parallelizing techs.I'm now studying and thinking carefully about your article.But I got a question that really bothers me,which is just about how to provide interface to the user,as I'm not quite experienced in such designing job.</p>
+<p>The question is:There are many subsystems,with different functioanlities.Is it a good way that we let the client to use the system's functionality directly as using a plugin,or we need pre-define some system's interface in the framework level,for the engine? Take rendersystem as example,do we need some interface (like services) defined for it?</p>
+<p>Hey,I don't know if it is suitable to ask it here.Anyway thank you for the article.It's awesome.<br>
+By the way,I'm using TBB for my test/study,currently it works pretty fine in Lock step mode.</p>
+</div></div></div>    <div class="comment-contextual-links">
+      <span class="icon-edit"></span>
+      <ul class="links inline"><li class="comment_forbidden first last"><span><a href="https://software.intel.com/en-us/user/login?destination=node/155986%23comment-form">Log in</a> to post comments</span></li>
+</ul>    </div>
+    </div>
+
+  </div>
+
+</article>
+<a id="comment-1151340"></a>
+<article class="comment comment-by-node-author odd clearfix" about="/en-us/comment/1151340#comment-1151340" typeof="sioc:Post sioct:Comment">
+  <header>
+    <p class="submitted">
+      <span property="dc:date dc:created" content="2009-01-06T13:05:31-08:00" datatype="xsd:dateTime" rel="sioc:has_creator"><a href="https://software.intel.com/en-us/user/335526" title="View user profile." class="username" xml:lang="" about="/en-us/user/335526" typeof="sioc:UserAccount" property="foaf:name" datatype="">Jeffrey Andrews...</a> said on <time pubdate="" datetime="2009-01-06T13:05:31-08:00">Tue, 01/06/2009 - 13:05</time></span>    </p>
+
+            
+      </header>
+
+  <div class="comment-content-wrapper">
+    <span class="user-picture">
+    <a href="https://software.intel.com/en-us/user/335526" title="View user profile."><img typeof="foaf:Image" src="./Designing the Framework of a Parallel Game Engine _ Intel® Developer Zone_files/profile.jpg" alt="Jeffrey Andrews (Intel)&#39;s picture" title="Jeffrey Andrews (Intel)&#39;s picture"></a>  </span>
+
+    <div class="comment-content">
+    <span rel="sioc:reply_of" resource="/en-us/articles/designing-the-framework-of-a-parallel-game-engine" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Hi Josh,</p>
+<p>Thanks for giving this a really good looking over.  You've made some really good points.  I'm not working on Smoke anymore but I'm sure Orion will mull them over.</p>
+<p>Here are some tidbits to give you a little more insight into Smoke:</p>
+<p>. The original intent was to have the Scheduler query the system tasks on how many clock ticks they would require to execute, and ping the task if it was exceeding the requested amount.  Due to time constraints we weren't able to implement this - easy to say but hard to do.</p>
+<p>. Free step has some extra complexities with the change notification that, again, we didn't have enough time to implement.</p>
+<p>. Lock step can do a pseudo free step, such that, a system task that doesn't need to do anything will just return, relinquishing the thread for another task.  System tasks that need more time can break up their calculation so that they halt calculations close to when the clock tick expires and continue calculations on the next clock tick.</p>
+</div></div></div><span class="icon-belt belt-color-green"></span>    <div class="comment-contextual-links">
+      <span class="icon-edit"></span>
+      <ul class="links inline"><li class="comment_forbidden first last"><span><a href="https://software.intel.com/en-us/user/login?destination=node/155986%23comment-form">Log in</a> to post comments</span></li>
+</ul>    </div>
+    </div>
+
+  </div>
+
+</article>
+<a id="comment-1151339"></a>
+<article class="comment even clearfix" about="/en-us/comment/1151339#comment-1151339" typeof="sioc:Post sioct:Comment">
+  <header>
+    <p class="submitted">
+      <span property="dc:date dc:created" content="2009-01-05T13:32:45-08:00" datatype="xsd:dateTime" rel="sioc:has_creator"><a href="https://software.intel.com/en-us/user/183101" title="View user profile." class="username" xml:lang="" about="/en-us/user/183101" typeof="sioc:UserAccount" property="foaf:name" datatype="">Brad Werth (Intel)</a> said on <time pubdate="" datetime="2009-01-05T13:32:45-08:00">Mon, 01/05/2009 - 13:32</time></span>    </p>
+
+            
+      </header>
+
+  <div class="comment-content-wrapper">
+    <span class="user-picture">
+    <a href="https://software.intel.com/en-us/user/183101" title="View user profile."><img typeof="foaf:Image" src="./Designing the Framework of a Parallel Game Engine _ Intel® Developer Zone_files/10708590.jpg" alt="Brad Werth (Intel)&#39;s picture" title="Brad Werth (Intel)&#39;s picture"></a>  </span>
+
+    <div class="comment-content">
+    <span rel="sioc:reply_of" resource="/en-us/articles/designing-the-framework-of-a-parallel-game-engine" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Hey, I'm responding to Josh's many insightful questions posted earlier.</p>
+<p>1) How/Why is TBB faster for Smoke?  We didn't do a lot of deep-thinking on this -- we treated TBB as middleware and tried it out.  It has better performance, so there we go.  Conceptually the scheduler in TBB and all Cilk-style schedulers have an advantage as cores increase (no central task pool to synchronize on) and data decomposition increases (cache benefits become apparent).</p>
+<p>2) Why do we order the tasks being submitted to TBB?  The TBB scheduler is, as an implementation detail, FIFO.  We order the tasks to put the largest indivisible work in first, so itcan get started immediately.  If it was submitted last, it would be possible for the TBB threads to start on smaller data decomposition tasks, which would increase the total frame time.</p>
+<p>3) Is TBB appropriate for games?  Yes, we think so.  Certainly the scheduling algorithm has nice performance properties.  As with most middleware, the issue with TBB is not whether it can deliver performance (it can), but whether you can effectively utilize its organizational idiom.  I'm spending a lot of time thinking about that and how to wrap TBB better for games.  Take a look at the Pet Me demo for a simple wrapping of TBB that uses a Promises pattern (like in Java 1.5).  Pet Me is at http://www.gamasutra.com/view/feature/3876/sponsored_feature_multicore_.php.</p>
+<p>4) How can we improve task scheduling in Smoke? As Orion wrote earlier, breaking the requirement to synchronize each frame is a natural next step.  I posted my thoughts on how to do that in Smoke as a comment to Orion's blog entry http://software.intel.com/en-us/blogs/2008/12/30/lock-or-be-free/.</p>
+<p>5) Is it viable to have each recurring task schedule itself when finished?  It's a good idea but it's challenging to do in TBB.  The internal tree structure of TBB and the local work trees make it a challenge to put a task into the system that will be run "later".  In TBB, if a task is about to finish and makes a new child/continuation/etc to run again, that task will run next, making the effor equivalent to a while(true) loop.  You can request a specific task to run next, but how will you know what's in the task pool or which thread it is assigned to?  It's a bit of a mess.  I'm working on an article now that lays out some of these challenges and some partial solutions we've found.  I'll post a notice here when that is available.</p>
+<p>Let me be perfectly clear that when I talk about challenges and solutions, I'm discussing the peculiarities of using TBB's API, not its ability to deliver performance.  TBB performance has been fantastic in almost every situation where we've been able to apply the library.</p>
+</div></div></div><span class="icon-belt belt-color-green"></span>    <div class="comment-contextual-links">
+      <span class="icon-edit"></span>
+      <ul class="links inline"><li class="comment_forbidden first last"><span><a href="https://software.intel.com/en-us/user/login?destination=node/155986%23comment-form">Log in</a> to post comments</span></li>
+</ul>    </div>
+    </div>
+
+  </div>
+
+</article>
+<a id="comment-1151338"></a>
+<article class="comment comment-by-anonymous odd clearfix" about="/en-us/comment/1151338#comment-1151338" typeof="sioc:Post sioct:Comment">
+  <header>
+    <p class="submitted">
+      <span property="dc:date dc:created" content="2008-12-30T23:19:19-08:00" datatype="xsd:dateTime" rel="sioc:has_creator">Anonymous said on <time pubdate="" datetime="2008-12-30T23:19:19-08:00">Tue, 12/30/2008 - 23:19</time></span>    </p>
+
+            
+      </header>
+
+  <div class="comment-content-wrapper">
+    <span class="user-picture">
+    <img typeof="foaf:Image" src="./Designing the Framework of a Parallel Game Engine _ Intel® Developer Zone_files/profile.jpg" alt="&#39;s picture" title="&#39;s picture">  </span>
+
+    <div class="comment-content">
+    <span rel="sioc:reply_of" resource="/en-us/articles/designing-the-framework-of-a-parallel-game-engine" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Hello Orion,</p>
+<p>Informative blog post. Thanks. :)</p>
+<p>I agree with you that lock step mode can be tweaked to better take advantage of our available resources. Lock step performs better, especially if the work is divided properly meaning that the number of available tasks (preferably far) exceeds the number of hardware threads and the jobs are relatively equal in size. I agree.</p>
+<p>But the biggest advantage of free step execution mode is the extra flexibility it brings along. Both free step and lock step can max out our CPU usage, but free step is superior in that it's capable of delivering a better gaming experience because we can now dynamically adapt our game to the gamers' machines by allowing different subsystems to run at different frequencies. So while it's true that they both can theoretically max out our CPU usage meaning that literally no CPU cycles are wasted, but free step can partition a frame in a way that more time is devoted to those subsystems that we, as the developers, think contribute more to our game's "responsiveness".</p>
+<p>The way I have envisioned it, we would identify our priorities in a list (i.e. 1.Rendering, 2.Physics, 3.AI and such) and when the game starts, it would scale to the gamers' machines so those subsystems that have lower priorities would slow down in favor of those that are given higher priorities. We can even let the gamer tweak this priority inside the Options menu, so for instance, if one particular gamer is more interested in a more challenging AI than more accurate physics calculations she can reverse the priorities.</p>
+<p>Of course this is easier to say than do, but all things we have today started as ideas one day nonetheless.</p>
+<p>I'd be looking forward to hearing from you Orion.</p>
+<p>Kind Regards,<br>
+Josh</p>
+<p>P.S. In case anybody comes up with other interesting ideas (or implementations!) long after this discussion is over, please don't hesitate to contact me. You can reach me at http://aphrodite3d.blogspot.com. I'm not much of a blogger as you see!</p>
+</div></div></div>    <div class="comment-contextual-links">
+      <span class="icon-edit"></span>
+      <ul class="links inline"><li class="comment_forbidden first last"><span><a href="https://software.intel.com/en-us/user/login?destination=node/155986%23comment-form">Log in</a> to post comments</span></li>
+</ul>    </div>
+    </div>
+
+  </div>
+
+</article>
+<a id="comment-1151337"></a>
+<article class="comment even clearfix" about="/en-us/comment/1151337#comment-1151337" typeof="sioc:Post sioct:Comment">
+  <header>
+    <p class="submitted">
+      <span property="dc:date dc:created" content="2008-12-30T16:20:02-08:00" datatype="xsd:dateTime" rel="sioc:has_creator"><a href="https://software.intel.com/en-us/user/274330" title="View user profile." class="username" xml:lang="" about="/en-us/user/274330" typeof="sioc:UserAccount" property="foaf:name" datatype="">Orion Granatir ...</a> said on <time pubdate="" datetime="2008-12-30T16:20:02-08:00">Tue, 12/30/2008 - 16:20</time></span>    </p>
+
+            
+      </header>
+
+  <div class="comment-content-wrapper">
+    <span class="user-picture">
+    <a href="https://software.intel.com/en-us/user/274330" title="View user profile."><img typeof="foaf:Image" src="./Designing the Framework of a Parallel Game Engine _ Intel® Developer Zone_files/11228090.jpg" alt="Orion Granatir (Intel)&#39;s picture" title="Orion Granatir (Intel)&#39;s picture"></a>  </span>
+
+    <div class="comment-content">
+    <span rel="sioc:reply_of" resource="/en-us/articles/designing-the-framework-of-a-parallel-game-engine" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>I wrote a quick blog about lock vs free step: http://software.intel.com/en-us/blogs/2008/12/30/lock-or-be-free/  This blog highlights some of the issues I was thinking about for question 5.</p>
+<p>Hey Josh, you have some interesting ideas here.  I think you are right, the best place to put most of the burden would be the Scheduler.  One thing the Scheduler is lacking in Smoke is "knowledge" about running tasks.  It doesn't have priority or information for load balancing.  Right now, the Scheduler needs a large number of small tasks to keep all the worker threads busy because it doesn't try to actively load balance.  With TBB we to get some extra balancing with task stealing, but the Scheduler could to a lot more.</p>
+<p>Thanks again for the posts and let me know what you think of the blog :)</p>
+</div></div></div>    <div class="comment-contextual-links">
+      <span class="icon-edit"></span>
+      <ul class="links inline"><li class="comment_forbidden first last"><span><a href="https://software.intel.com/en-us/user/login?destination=node/155986%23comment-form">Log in</a> to post comments</span></li>
+</ul>    </div>
+    </div>
+
+  </div>
+
+</article>
+<a id="comment-1151336"></a>
+<article class="comment comment-by-anonymous odd clearfix" about="/en-us/comment/1151336#comment-1151336" typeof="sioc:Post sioct:Comment">
+  <header>
+    <p class="submitted">
+      <span property="dc:date dc:created" content="2008-12-29T20:46:01-08:00" datatype="xsd:dateTime" rel="sioc:has_creator">Anonymous said on <time pubdate="" datetime="2008-12-29T20:46:01-08:00">Mon, 12/29/2008 - 20:46</time></span>    </p>
+
+            
+      </header>
+
+  <div class="comment-content-wrapper">
+    <span class="user-picture">
+    <img typeof="foaf:Image" src="./Designing the Framework of a Parallel Game Engine _ Intel® Developer Zone_files/profile.jpg" alt="&#39;s picture" title="&#39;s picture">  </span>
+
+    <div class="comment-content">
+    <span rel="sioc:reply_of" resource="/en-us/articles/designing-the-framework-of-a-parallel-game-engine" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Hey Orion,</p>
+<p>Thanks for taking the time and writing a follow-up. I really appreciate it.</p>
+<p>5) If we're about to stick to task pools (which by the way, being a more scalable approach to threading, is a move in the right direction IMHO) as opposed to going down the conventional route of giving each subsystem its own thread and looping at different frequencies, one way to do this is to change the tasks so they would:</p>
+<p>a) immediately add themselves to the queue at the end of each execution<br>
+b) keep track of the elapsed time since their last execution and yield if enough time has not passed</p>
+<p>This way, we are effectively turning that explicit loop in the one-thread-per-subsystem approach into an implicit loop. This approach is preferable if we don't want to make drastic changes to the scheduler, but puts the burden of scheduling on the tasks themselves.</p>
+<p>A better approach that I can think of, which doesn't suit Smoke's current scheduler right out of the box, is to put this burden on the scheduler itself. This way a scheduler has an internal timer with events set at different frequencies (which we have obtained from the subsystems themselves, i.e. how many times per second does the task want to run?), each of which when fired, results in the corresponding tasks that belong to the said subsystem to execute. I haven't given this further thought though. What would happen if the system under too much pressure that can't run the tasks at the predefined intervals? Maybe a dynamic solution that alters the frequencies during the run-time would help us alleviate this problem to some degree...</p>
+<p>But one problem remains. The downside of free step approaches in general is that it would introduce more lag into our system. In the worst case, the rendering happens before physics which takes place before AI which in turn runs before input and I'm not even taking other subsystems into considerations.</p>
+<p>Maybe a hybrid approach is what we should be looking for.</p>
+<p>I'd be looking forward to hearing from you.<br>
+Regards,<br>
+Josh</p>
+</div></div></div>    <div class="comment-contextual-links">
+      <span class="icon-edit"></span>
+      <ul class="links inline"><li class="comment_forbidden first last"><span><a href="https://software.intel.com/en-us/user/login?destination=node/155986%23comment-form">Log in</a> to post comments</span></li>
+</ul>    </div>
+    </div>
+
+  </div>
+
+</article>
+<a id="comment-1151335"></a>
+<article class="comment even clearfix" about="/en-us/comment/1151335#comment-1151335" typeof="sioc:Post sioct:Comment">
+  <header>
+    <p class="submitted">
+      <span property="dc:date dc:created" content="2008-12-29T14:09:07-08:00" datatype="xsd:dateTime" rel="sioc:has_creator"><a href="https://software.intel.com/en-us/user/274330" title="View user profile." class="username" xml:lang="" about="/en-us/user/274330" typeof="sioc:UserAccount" property="foaf:name" datatype="">Orion Granatir ...</a> said on <time pubdate="" datetime="2008-12-29T14:09:07-08:00">Mon, 12/29/2008 - 14:09</time></span>    </p>
+
+            
+      </header>
+
+  <div class="comment-content-wrapper">
+    <span class="user-picture">
+    <a href="https://software.intel.com/en-us/user/274330" title="View user profile."><img typeof="foaf:Image" src="./Designing the Framework of a Parallel Game Engine _ Intel® Developer Zone_files/11228090.jpg" alt="Orion Granatir (Intel)&#39;s picture" title="Orion Granatir (Intel)&#39;s picture"></a>  </span>
+
+    <div class="comment-content">
+    <span rel="sioc:reply_of" resource="/en-us/articles/designing-the-framework-of-a-parallel-game-engine" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Hey Josh,</p>
+<p>Thanks for all the comments and feedback.<br>
+I am going to write a blog post about some of your comments so hopefully more people get their eyes on it.</p>
+<p>Let me answer some quick questions.  I’ll try and get Brad Werth to throw in his two cents on the TBB questions.  Brad’s the individual that did most of the TBB work.  I’ll answer some of the longer questions in my blog post this week :D  I’ll post a link when it’s up.</p>
+<p>1. TBB worked well for Smoke’s performance.  The task stealing was the real key.  I haven’t look at the performance recently.</p>
+<p>If you look in Smoke.gdf, you can change the mechanism used for the scheduler: </p>
+<p>Change the Value from TBB to TP to use the native windows threading instead of TBB and you can compare performace.</p>
+<p>2. &amp; 3.  I’ll let Brad answer these.  Brad is writing an article on TBB for game engines.  TBB is an effective tool for expressing threading.  If used correctly, game engines can see a lot of benefit.  The biggest complaint I hear about TBB is the lack of PS3 support… but TBB is open source, so hopefully someone is working on a port :D</p>
+<p>4. There is always some room for improvement.  If you look at the native windows threading (set TaskManager to TP in Smoke.gdf), you’ll see our very rough and simple task scheduler.  It’s doesn’t have all the fancy features (like tasking stealing) you get with TBB.  You hit on the number one feature I would like to add to the scheduler, free step mode (all systems don’t have a hard sync point).</p>
+<p>5. This is the big question.  I’ll write a blog with my opinions/thoughts on this subject.  As Jeff explains in his article, this framework could run in free step mode (section 2.1.1).  There are a lot of benefits to running in free step vs lock step.  However, there are some less than obvious benefits to lock step.  We start off Smoke with at free step scheme.  But we decided to switch to lock step for simplification and time of development.  By all means, you could adapt Smoke to be free step… something I would love to see.  It’s actually not that hard (I hope)... since each system gets required data directly from the owning system, each system could buffer it’s data and update at a desired frequency.</p>
+<p>Again, thanks for all your input.<br>
+Please keep us up-to-date on what you do with Smoke!<br>
+Thanks,<br>
+Orion</p>
+</div></div></div>    <div class="comment-contextual-links">
+      <span class="icon-edit"></span>
+      <ul class="links inline"><li class="comment_forbidden first last"><span><a href="https://software.intel.com/en-us/user/login?destination=node/155986%23comment-form">Log in</a> to post comments</span></li>
+</ul>    </div>
+    </div>
+
+  </div>
+
+</article>
+<h2 class="element-invisible">Pages</h2><div class="item-list"><ul class="pager"><li class="pager-current first">1</li>
+<li class="pager-item"><a rel="nofollow" title="Go to page 2" href="https://software.intel.com/en-us/articles/designing-the-framework-of-a-parallel-game-engine?page=1">2</a></li>
+<li class="pager-next"><a rel="nofollow" title="Go to next page" href="https://software.intel.com/en-us/articles/designing-the-framework-of-a-parallel-game-engine?page=1">next ›</a></li>
+<li class="pager-last last"><a rel="nofollow" title="Go to last page" href="https://software.intel.com/en-us/articles/designing-the-framework-of-a-parallel-game-engine?page=1">last »</a></li>
+</ul></div>
+  <div class="comment-form-wrapper">
+    <h2 class="comments__form-title title comment-form">Add a Comment</h2>
+    <a href="https://software.intel.com/en-us/articles/designing-the-framework-of-a-parallel-game-engine/#" class="to-top"><span class="icon-caret-up">Top</span></a>
+        <p class="tech-support">(For technical discussions visit our <a href="https://software.intel.com/en-us/forum">developer forums</a>. For site or software product issues <a href="https://software.intel.com/en-us/contact">contact support</a>.)</p>
+          Please <a href="https://software.intel.com/en-us/user/login?language=en-us&destination=node/155986&https=1">sign in</a> to add a comment. Not a member? <a href="https://software.intel.com/registration?lang=en-us&0=node/155986" class="register-link button-cta">Join today</a>      </div>
+
+</section>
+                      </div>
+      
+      
+ <footer class="l-footer-first">
+    <footer class="l-legal-footer">
+  <nav class="menu">
+    <ul>
+      <li><a href="http://www.intel.com/content/www/us/en/legal/terms-of-use.html">Terms of Use</a></li>
+      <li><a href="http://www.intel.com/content/www/us/en/legal/trademarks.html">*Trademarks</a></li>
+      <li><a href="http://www.intel.com/content/www/us/en/privacy/intel-online-privacy-notice-summary.html">Privacy</a></li>
+      <li><a href="http://www.intel.com/content/www/us/en/privacy/intel-cookie-notice.html">Cookies</a></li>
+      <li class="menu-item drop-up">Publications        <ul>
+          <li><a href="https://software.intel.com/en-us/newsletter">Intel® Developer Zone Newsletter</a></li>
+          <li><a href="https://software.intel.com/en-us/intel-parallel-universe-magazine">Intel® Parallel Universe Magazine</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</footer>
+
+</footer>
+
+ <footer class="l-footer-second">
+     <footer class="l-language-footer">
+  <div class="limiter">
+    <section class="look-for-intel">
+      <span id="look-for-intel-expander"></span>
+      <span class="blurb">Look for us on:</span>
+        <div class="item-list"><ul><li class="facebook first"><a href="http://facebook.com/inteldeveloperzone" target="_blank" class="icon-logo-facebook">Facebook</a></li>
+<li class="twitter"><a href="http://twitter.com/intelsoftware" target="_blank" class="icon-logo-twitter-bird">Twitter</a></li>
+<li class="gplus"><a href="https://plus.google.com/+IntelSoftware" target="_blank" class="icon-logo-gplus">Google+</a></li>
+<li class="linkedin"><a href="http://www.linkedin.com/groups/Intel-Developer-Zone-3078126" target="_blank" class="icon-logo-linkedin">LinkedIn</a></li>
+<li class="youtube last"><a href="https://www.youtube.com/user/intelswnetwork" target="_blank" class="icon-logo-youtube">YouTube</a></li>
+</ul></div>    </section>
+    <section class="language-selector">
+      <ul class="language-switcher-locale-url"><li class="en first active"><a href="https://software.intel.com/en-us/articles/designing-the-framework-of-a-parallel-game-engine" class="language-link active" lang="en">English</a><ul><li class="zh-hans"><a href="https://software.intel.com/zh-cn/articles/designing-the-framework-of-a-parallel-game-engine" class="language-link" lang="zh-hans">简体中文</a></li><li class="fr"><a href="https://software.intel.com/fr-fr/articles/designing-the-framework-of-a-parallel-game-engine" class="language-link" lang="fr">Français</a></li><li class="ru"><a href="https://software.intel.com/ru-ru/articles/designing-the-framework-of-a-parallel-game-engine" class="language-link" lang="ru">Русский</a></li><li class="es"><a href="https://software.intel.com/es-es/articles/designing-the-framework-of-a-parallel-game-engine" class="language-link" lang="es">Español</a></li><li class="pt-br"><a href="https://software.intel.com/pt-br/articles/designing-the-framework-of-a-parallel-game-engine" class="language-link" lang="pt-br">Português</a></li><li class="de"><a href="https://software.intel.com/de-de/articles/designing-the-framework-of-a-parallel-game-engine" class="language-link" lang="de">Deutsch</a></li><li class="it last"><a href="https://software.intel.com/it-it/articles/designing-the-framework-of-a-parallel-game-engine" class="language-link" lang="it">Italiano</a></li></ul></li>
+
+
+
+
+
+
+
+</ul>    </section>
+  </div>
+</footer>
+ </footer>
+
+</div>
+
+<div id="ZN_0677ZkA58MonfDL"></div><!--Qualtrics metrics. Required by intel_metrics module -->
+<script src="./Designing the Framework of a Parallel Game Engine _ Intel® Developer Zone_files/js_N8sZavI-Psql2DEstoeMCCx5XvK5YefeDTjLUOExlnk.js"></script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"aca265f578","applicationID":"3205480","transactionName":"ZlADZEtYCxJQBU0KC18aIFNNUAoPHghWBwFuRQBXXGYTCFQR","queueTime":0,"applicationTime":678,"atts":"ShcAEgNCGBw=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-632.min.js"}</script>
+
+<div id="cboxOverlay" style="display: none;"></div><div id="colorbox" class="" style="display: none; padding-bottom: 50px; padding-right: 50px;"><div id="cboxWrapper"><div><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left;"></div><div id="cboxContent" style="float: left;"><div id="cboxLoadedContent" style="width: 0px; height: 0px; overflow: hidden; float: left;"></div><div id="cboxLoadingOverlay" style="float: left;"></div><div id="cboxLoadingGraphic" style="float: left;"></div><div id="cboxTitle" style="float: left;"></div><div id="cboxCurrent" style="float: left;"></div><div id="cboxNext" style="float: left;"></div><div id="cboxPrevious" style="float: left;"></div><div id="cboxSlideshow" style="float: left;"></div><div id="cboxClose" style="float: left;"></div></div><div id="cboxMiddleRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none;"></div></div><script type="text/javascript" src="./Designing the Framework of a Parallel Game Engine _ Intel® Developer Zone_files/saved_resource"></script><title> </title><div id="WidgetFloaterPanels" translate="no" style="display: none;text-align: left;direction: ltr" class="LTRStyle"> <div id="WidgetFloater" style="display: none" onmouseover="Microsoft.Translator.OnMouseOverFloater()" onmouseout="Microsoft.Translator.OnMouseOutFloater()"> <div id="WidgetLogoPanel"> <span id="WidgetTranslateWithSpan" style="text-align:left;">Bing Translator</span> <span id="WidgetCloseButton" title="Exit Translation" onclick="Microsoft.Translator.FloaterOnClose()"><img src="./Designing the Framework of a Parallel Game Engine _ Intel® Developer Zone_files/close_x.png" id="WidgetCloseImage" class="WidgetCloseImage"></span></div> <div id="LanguageMenuPanel"> <div class="DDStyle_outer"><input name="LanguageMenu_svid" type="text" id="LanguageMenu_svid" style="display:none;" autocomplete="on" value="es" onclick="this.select()"> <input name="LanguageMenu_textid" type="text" id="LanguageMenu_textid" style="display:none;" autocomplete="on" onclick="this.select()"> <span onselectstart="return false" tabindex="0" class="DDStyle" id="__LanguageMenu_header" onclick="return LanguageMenu &amp;&amp; !LanguageMenu.Show(&#39;__LanguageMenu_popup&#39;, event);" onkeydown="return LanguageMenu &amp;&amp; !LanguageMenu.Show(&#39;__LanguageMenu_popup&#39;, event);" title="Spanish" style="overflow: visible;">Spanish</span> <div style="position:relative;text-align:left;left:0;"><div style="position:absolute;width:;left:0px;"><div class="DDStyle" style="display:none;" id="__LanguageMenu_popup"> <table id="LanguageMenu" border="0"> <tbody><tr> <td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;es&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="https://software.intel.com/en-us/articles/designing-the-framework-of-a-parallel-game-engine/#es">Spanish</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;tr&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="https://software.intel.com/en-us/articles/designing-the-framework-of-a-parallel-game-engine/#tr">Turkish</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;ru&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="https://software.intel.com/en-us/articles/designing-the-framework-of-a-parallel-game-engine/#ru">Russian</a></td> </tr><tr> <td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;pt&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="https://software.intel.com/en-us/articles/designing-the-framework-of-a-parallel-game-engine/#pt">Portuguese</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;zh-chs&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="https://software.intel.com/en-us/articles/designing-the-framework-of-a-parallel-game-engine/#zh-chs">Chinese Simplified</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;de&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="https://software.intel.com/en-us/articles/designing-the-framework-of-a-parallel-game-engine/#de">German</a></td> </tr><tr> <td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;fr&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="https://software.intel.com/en-us/articles/designing-the-framework-of-a-parallel-game-engine/#fr">French</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;zh-cht&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="https://software.intel.com/en-us/articles/designing-the-framework-of-a-parallel-game-engine/#zh-cht">Chinese Traditional</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;en&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="https://software.intel.com/en-us/articles/designing-the-framework-of-a-parallel-game-engine/#en">English</a></td> </tr><tr> <td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;it&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="https://software.intel.com/en-us/articles/designing-the-framework-of-a-parallel-game-engine/#it">Italian</a></td><td></td><td></td> </tr> </tbody></table> <img alt="" src="./Designing the Framework of a Parallel Game Engine _ Intel® Developer Zone_files/niche.gif" style="height:7px;width:17px;border-width:0px;left:20px;"> <div id="OriginalLanguageDiv"><span id="OriginalTextSpan">ORIGINAL: </span><span id="OriginalLanguageSpan"></span></div></div></div></div></div> <script type="text/javascript"> var LanguageMenu; var LanguageMenu_keys=["es","pt","fr","it","tr","zh-chs","zh-cht","ru","de","en"]; var LanguageMenu_values=["Spanish","Portuguese","French","Italian","Turkish","Chinese Simplified","Chinese Traditional","Russian","German","English"]; var LanguageMenu_callback=function(){ }; var LanguageMenu_popupid='__LanguageMenu_popup'; </script> </div> <div id="CTFLinksPanel"> <span id="ExternalLinksPanel"><a id="BingTranslatorLink" title="bing.com/translator" href="http://www.bing.com/translator" target="_blank"> <img id="BingTranslatorLinkImg" src="./Designing the Framework of a Parallel Game Engine _ Intel® Developer Zone_files/bingmark.png"></a> <a id="FacebookLink" href="https://www.facebook.com/microsofttranslator" title="Bing Translator on Facebook" target="_blank"> <img id="FacebookImg" src="./Designing the Framework of a Parallel Game Engine _ Intel® Developer Zone_files/fbookmark.png"></a> <a id="ShareLink" title="Share" href="javascript:Microsoft.Translator.FloaterShowSharePanel()"> <img id="ShareImg" src="./Designing the Framework of a Parallel Game Engine _ Intel® Developer Zone_files/sharemark.png"></a> </span> </div> <div id="FloaterProgressBar"> <div id="ProgressFill"> Translating... </div> </div> </div> <div id="WidgetFloaterCollapsed" style="display: none" onmouseover="Microsoft.Translator.OnMouseOverFloater()"> <span id="WidgetFloaterCollapsedSpan">Bing Translator</span> <span id="WidgetCloseButtonCollapsed" title="Exit Translation" onclick="Microsoft.Translator.FloaterOnClose()"><img src="./Designing the Framework of a Parallel Game Engine _ Intel® Developer Zone_files/close_x.png" id="WidgetCloseImageCollapsed" class="WidgetCloseImage"></span></div> <div id="FloaterSharePanel" style="display: none"> <div id="ShareTextDiv"> <span id="ShareTextSpan"> COPY THE URL BELOW </span> </div> <div id="ShareTextboxDiv"> <input name="ShareTextbox" type="text" id="ShareTextbox" readonly="readonly" onclick="this.select()"> <!--a id="TwitterLink" title="Share on Twitter"> <img id="TwitterImg" src="https://ssl.microsofttranslator.com/static/219580/img/twitter_icon.png" /></a> <a-- id="FacebookLink" title="Share on Facebook"> <img id="FacebookImg" src="https://ssl.microsofttranslator.com/static/219580/img/facebook_icon.png" /></a--> <a id="EmailLink" title="Email this translation"> <img id="EmailImg" src="./Designing the Framework of a Parallel Game Engine _ Intel® Developer Zone_files/email_icon.png"></a> </div> <div id="ShareFooter"> <span id="ShareHelpSpan"><a id="ShareHelpLink"> <img id="ShareHelpImg" src="./Designing the Framework of a Parallel Game Engine _ Intel® Developer Zone_files/embed_question.png"></a></span> <span id="ShareBackSpan"><a id="ShareBack" href="javascript:Microsoft.Translator.FloaterOnShareBackClick()" title="Back To Translation"> Back</a></span> </div> <input name="EmailSubject" type="hidden" id="EmailSubject" value="Check out this page in {0} translated from {1}"> <input name="EmailBody" type="hidden" id="EmailBody" value="Translated: {0}%0d%0aOriginal: {1}%0d%0a%0d%0aAutomatic translation powered by Microsoft® Translator%0d%0ahttp://www.bing.com/translator?ref=MSTWidget"> <input type="hidden" id="ShareHelpText" value="This link allows visitors to launch this page and automatically translate it to {0}."> </div> <div id="FloaterEmbed" style="display: none"> <div id="EmbedTextDiv"> <span id="EmbedTextSpan">EMBED THE SNIPPET BELOW IN YOUR SITE</span> <a id="EmbedHelpLink" title="Copy this code and place it into your HTML."> <img id="EmbedHelpImg" src="./Designing the Framework of a Parallel Game Engine _ Intel® Developer Zone_files/embed_question.png"></a> </div> <div id="EmbedTextboxDiv"> <input name="EmbedSnippetTextBox" type="text" id="EmbedSnippetTextBox" readonly="readonly" value="&lt;div id=&#39;MicrosoftTranslatorWidget&#39; class=&#39;Dark&#39; style=&#39;color:white;background-color:#555555&#39;&gt;&lt;/div&gt;&lt;script type=&#39;text/javascript&#39;&gt;setTimeout(function(){var s=document.createElement(&#39;script&#39;);s.type=&#39;text/javascript&#39;;s.charset=&#39;UTF-8&#39;;s.src=((location &amp;&amp; location.href &amp;&amp; location.href.indexOf(&#39;https&#39;) == 0)?&#39;https://ssl.microsofttranslator.com&#39;:&#39;http://www.microsofttranslator.com&#39;)+&#39;/ajax/v3/WidgetV3.ashx?siteData=ueOIGRSKkd965FeEGM5JtQ**&amp;ctf=true&amp;ui=true&amp;settings=manual&amp;from=en&#39;;var p=document.getElementsByTagName(&#39;head&#39;)[0]||document.documentElement;p.insertBefore(s,p.firstChild); },0);&lt;/script&gt;" onclick="this.select()"> </div> <div id="EmbedNoticeDiv"><span id="EmbedNoticeSpan">Enable collaborative features and customize widget: <a href="http://www.bing.com/widget/translator" target="_blank">Bing Webmaster Portal</a></span></div> <div id="EmbedFooterDiv"><span id="EmbedBackSpan"><a href="javascript:Microsoft.Translator.FloaterOnEmbedBackClick()" title="Back To Translation">Back</a></span></div> </div> <script type="text/javascript"> var intervalId = setInterval(function () { if (MtPopUpList) { LanguageMenu = new MtPopUpList(); var langMenu = document.getElementById(LanguageMenu_popupid); var origLangDiv = document.createElement("div"); origLangDiv.id = "OriginalLanguageDiv"; origLangDiv.innerHTML = "<span id='OriginalTextSpan'>ORIGINAL: </span><span id='OriginalLanguageSpan'></span>"; langMenu.appendChild(origLangDiv); LanguageMenu.Init('LanguageMenu', LanguageMenu_keys, LanguageMenu_values, LanguageMenu_callback, LanguageMenu_popupid); window["LanguageMenu"] = LanguageMenu; clearInterval(intervalId); } }, 1); </script> </div><script type="text/javascript" src="./Designing the Framework of a Parallel Game Engine _ Intel® Developer Zone_files/saved_resource(1)"></script></body></html>

@@ -1,15 +1,22 @@
-﻿Build started 12/06/2015 17:23:46.
+﻿Build started 20/06/2015 16:19:18.
      1>Project "C:\Users\Oliver\Desktop\Git\Hengine\Hengine\Hengine.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /I"C:\Users\Oliver\Desktop\Git\Hengine\libs\glfw-3.1.1\include" /ZI /nologo /W3 /WX- /sdl /Od /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Debug\\" /Fd"x64\Debug\vc140.pdb" /Gd /TP /errorReport:prompt main.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /I"C:\Users\Oliver\Desktop\Git\Hengine\libs\glfw-3.1.1\include" /ZI /nologo /W3 /WX- /sdl /Od /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Debug\\" /Fd"x64\Debug\vc140.pdb" /Gd /TP /errorReport:prompt Hengine.cpp main.cpp System.cpp
+         System.cpp
          main.cpp
+         Hengine.cpp
+         Generating Code...
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Oliver\Desktop\Git\Hengine\x64\Debug\Hengine.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Users\Oliver\Desktop\Git\Hengine\libs\glfw-3.1.1\lib-vc2013" glfw3dll.lib winmm.lib opengl32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\Oliver\Desktop\Git\Hengine\x64\Debug\Hengine.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Oliver\Desktop\Git\Hengine\x64\Debug\Hengine.lib" /MACHINE:X64 x64\Debug\Display.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Oliver\Desktop\Git\Hengine\x64\Debug\Hengine.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Users\Oliver\Desktop\Git\Hengine\libs\glfw-3.1.1\lib-vc2013" glfw3dll.lib winmm.lib opengl32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\Oliver\Desktop\Git\Hengine\x64\Debug\Hengine.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Oliver\Desktop\Git\Hengine\x64\Debug\Hengine.lib" /MACHINE:X64 x64\Debug\Hengine.res
+         x64\Debug\Display.obj
+         x64\Debug\GameObject.obj
+         x64\Debug\Hengine.obj
          x64\Debug\main.obj
+         x64\Debug\System.obj
          x64\Debug\Vec2f.obj
          Hengine.vcxproj -> C:\Users\Oliver\Desktop\Git\Hengine\x64\Debug\Hengine.exe
      1>Done Building Project "C:\Users\Oliver\Desktop\Git\Hengine\Hengine\Hengine.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:04.15
+Time Elapsed 00:00:10.86

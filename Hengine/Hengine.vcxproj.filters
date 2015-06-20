@@ -30,6 +30,15 @@
     <ClCompile Include="GameObject.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Hengine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UScene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UObject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Display.h">
@@ -45,6 +54,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="GameObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Hengine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UScene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UObject.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
