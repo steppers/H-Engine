@@ -8,9 +8,12 @@ public:
 	GameSystem();
 	~GameSystem();
 
-	void init();
+	void init(double* deltaPtr);
 	void sync();
 
 	void run();
+
+private:
+	double* _deltaPtr;
 };
 

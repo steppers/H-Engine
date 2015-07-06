@@ -13,6 +13,8 @@ Display::Display(int width, int height, string title)
 	}
 
 	_valid = true;
+
+	setVSync(true);
 }
 
 Display::~Display()
@@ -35,6 +37,14 @@ void Display::update()
 {
 	glfwSwapBuffers(_window);
 	glfwPollEvents();
+}
+
+void Display::setVSync(bool vsync)
+{
+	if (vsync)
+		glfwSwapInterval(1);
+	else
+		glfwSwapInterval(0);
 }
 
 bool Display::isCloseRequested()

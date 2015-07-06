@@ -20,5 +20,5 @@ void InputSystem::sync()
 
 void InputSystem::run()
 {
-	cout << "Input System Executing" << endl;
+	
 }

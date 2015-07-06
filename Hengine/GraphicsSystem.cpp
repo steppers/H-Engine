@@ -26,8 +26,12 @@ void GraphicsSystem::run()
 	//Get the gl context for the current thread
 	_display->getGLContext();
 
+	//Set the clear color and clear the framebuffer.
 	glClearColor(0.5f, 0.5f, 0.5f, 1);
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+
+	//My rendering code in here.
+	
 }
 
 Display* GraphicsSystem::getDisplay()

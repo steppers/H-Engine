@@ -152,6 +152,7 @@
     <ClInclude Include="System.h" />
     <ClInclude Include="TaskThread.h" />
     <ClInclude Include="ThreadPool.h" />
+    <ClInclude Include="Util.h" />
     <ClInclude Include="Vec2f.h" />
   </ItemGroup>
   <ItemGroup>

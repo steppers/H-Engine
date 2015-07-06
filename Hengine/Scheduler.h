@@ -17,7 +17,6 @@ public:
 
 private:
 	ThreadPool* _pool;
-	
 	queue<Runnable*> _tasks;
 };
 
