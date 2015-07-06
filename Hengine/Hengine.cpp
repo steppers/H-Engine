@@ -1,15 +1,16 @@
 #include "Hengine.h"
 
-
-
 Hengine::Hengine()
 {
-	_display = new  Display(800, 600, "Hengine");
+	_sys_input.init();
+	_sys_graphics.init(800, 600, "Hengine");
+
+	_display = _sys_graphics.getDisplay();
 }
 
 Hengine::~Hengine()
 {
-	delete _display;
+	
 }
 
 void Hengine::start()
@@ -30,12 +31,16 @@ void Hengine::stop()
 
 void Hengine::run()
 {
-	//Get the gl context for the current thread
-	_display->getGLContext();
-	_display->setClearColor(0.5f, 0.5f, 0.5f);
 
 	while (_running)
 	{
+		//Execute the systems
+		_scheduler.addToSchedule((Runnable*)&_sys_input);
+		_scheduler.addToSchedule((Runnable*)&_sys_graphics);
+		_scheduler.executeSchedule();
+
+		//Syncronise the necessary systems
+
 		_display->update();
 
 		//Exit engine execution

@@ -13,6 +13,18 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\Systems">
+      <UniqueIdentifier>{db1f2b37-dda9-46a5-94a4-d16429735161}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Systems">
+      <UniqueIdentifier>{d178ffd3-c53a-4e90-bf3d-898d7edac9aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Scheduling">
+      <UniqueIdentifier>{d5395e09-27d5-4693-bebd-5eeb94ac8734}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scheduling">
+      <UniqueIdentifier>{2e3eb388-26f5-4d0f-b2bf-8f637d2dc2cb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -24,19 +36,25 @@
     <ClCompile Include="Vec2f.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="System.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="GameObject.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Hengine.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="UScene.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="GameSystem.cpp">
+      <Filter>Source Files\Systems</Filter>
     </ClCompile>
-    <ClCompile Include="UObject.cpp">
+    <ClCompile Include="GraphicsSystem.cpp">
+      <Filter>Source Files\Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="InputSystem.cpp">
+      <Filter>Source Files\Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="Scheduler.cpp">
+      <Filter>Source Files\Scheduling</Filter>
+    </ClCompile>
+    <ClCompile Include="ThreadPool.cpp">
+      <Filter>Source Files\Scheduling</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskThread.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -50,20 +68,32 @@
     <ClInclude Include="resource.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="System.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="GameObject.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Hengine.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="UScene.h">
+    <ClInclude Include="GameSystem.h">
+      <Filter>Header Files\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicsSystem.h">
+      <Filter>Header Files\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="InputSystem.h">
+      <Filter>Header Files\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="System.h">
+      <Filter>Header Files\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="Scheduler.h">
+      <Filter>Header Files\Scheduling</Filter>
+    </ClInclude>
+    <ClInclude Include="ThreadPool.h">
+      <Filter>Header Files\Scheduling</Filter>
+    </ClInclude>
+    <ClInclude Include="TaskThread.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="UObject.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="Runnable.h">
+      <Filter>Header Files\Scheduling</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

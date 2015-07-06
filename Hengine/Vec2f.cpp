@@ -57,6 +57,11 @@ Vec2f* Vec2f::normalise()
 	return this;
 }
 
+float Vec2f::dot(Vec2f* other)
+{
+	return other->getX() * _x + other->getY() * _y;
+}
+
 float Vec2f::getX()
 {
 	return _x;

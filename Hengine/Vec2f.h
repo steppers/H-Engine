@@ -17,6 +17,8 @@ public:
 	float length();
 	Vec2f* normalise();
 
+	float dot(Vec2f* other);
+
 	float getX();
 	float getY();
 

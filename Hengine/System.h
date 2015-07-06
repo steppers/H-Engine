@@ -1,13 +1,9 @@
 #pragma once
-class System
+
+#include "Runnable.h"
+
+class System : Runnable
 {
 public:
-	System();
-	~System();
-
-	void sync(System* system);
-
-private:
-
+	virtual void run() = 0;
 };
-
