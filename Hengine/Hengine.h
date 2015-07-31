@@ -1,5 +1,7 @@
 #pragma once
 
+#define TARGET_FRAME_RATE 60.0
+
 #include <iostream>
 #include <chrono>
 #include <thread>
@@ -34,10 +36,7 @@ private:
 
 	Scheduler _scheduler;
 
-	Time _time;
 	double _delta;
-	double _currTime;
-	double _lastTime;
 
 	int _fps;
 	double _frmTime;

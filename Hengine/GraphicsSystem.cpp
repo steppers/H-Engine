@@ -16,11 +16,6 @@ void GraphicsSystem::init(int width, int height, string title)
 	_display = new Display(width, height, title);
 }
 
-void GraphicsSystem::sync()
-{
-
-}
-
 void GraphicsSystem::run()
 {
 	//Get the gl context for the current thread

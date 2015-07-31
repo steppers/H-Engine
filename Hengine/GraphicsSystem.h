@@ -2,6 +2,7 @@
 
 #include "System.h"
 #include "Display.h"
+#include "GameSystem.h"
 
 #include <string>
 #include <GLFW\glfw3.h>
@@ -13,7 +14,6 @@ public:
 	~GraphicsSystem();
 
 	void init(int width, int height, string title);
-	void sync();
 
 	void run();
 

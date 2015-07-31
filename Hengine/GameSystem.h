@@ -9,7 +9,9 @@ public:
 	~GameSystem();
 
 	void init(double* deltaPtr);
+
 	void sync();
+	void getChanges();
 
 	void run();
 

@@ -32,10 +32,14 @@ void Hengine::stop()
 
 void Hengine::run()
 {
+	Time _time;
+	double _currTime;
+	double _lastTime;
+
 	_time.setTime(0);
 	_lastTime = 0;
 
-	double frameTime = 1.0 / 60.0;
+	double frameTime = 1.0 / TARGET_FRAME_RATE;
 
 	while (_running)
 	{

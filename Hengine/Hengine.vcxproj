@@ -135,9 +135,11 @@
     <ClCompile Include="Hengine.cpp" />
     <ClCompile Include="InputSystem.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="SceneManager.cpp" />
     <ClCompile Include="Scheduler.cpp" />
     <ClCompile Include="TaskThread.cpp" />
     <ClCompile Include="ThreadPool.cpp" />
+    <ClCompile Include="UObject.cpp" />
     <ClCompile Include="Vec2f.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -148,10 +150,15 @@
     <ClInclude Include="InputSystem.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="Runnable.h" />
+    <ClInclude Include="SceneManager.h" />
     <ClInclude Include="Scheduler.h" />
+    <ClInclude Include="SharedData.h" />
+    <ClInclude Include="SharedDataElement.h" />
+    <ClInclude Include="SharedDataObject.h" />
     <ClInclude Include="System.h" />
     <ClInclude Include="TaskThread.h" />
     <ClInclude Include="ThreadPool.h" />
+    <ClInclude Include="UObject.h" />
     <ClInclude Include="Util.h" />
     <ClInclude Include="Vec2f.h" />
   </ItemGroup>

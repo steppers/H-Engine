@@ -25,27 +25,48 @@
     <Filter Include="Source Files\Scheduling">
       <UniqueIdentifier>{2e3eb388-26f5-4d0f-b2bf-8f637d2dc2cb}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Scene">
+      <UniqueIdentifier>{6b89f194-f806-44b3-825b-8687a3379215}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Engine">
+      <UniqueIdentifier>{7140a44a-4c79-477a-9826-2658dd0fcd32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Math">
+      <UniqueIdentifier>{3fa09c5f-88f6-4fbb-bb07-5b396ebbf50e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Systems\Graphics">
+      <UniqueIdentifier>{2400e2fc-9842-4389-91d1-d75af386d242}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Systems\Input">
+      <UniqueIdentifier>{c96111af-fec5-4c9d-a1db-f735e792b827}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Systems\Graphics">
+      <UniqueIdentifier>{af1f079d-b5fe-4008-97ee-b6abea96b3b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Systems\Input">
+      <UniqueIdentifier>{0c9e96ed-7da9-4846-9238-8e8e98cba78c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Math">
+      <UniqueIdentifier>{13059ca2-a5fd-47a2-bde3-8c4b1f58c7d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Engine">
+      <UniqueIdentifier>{a64f1682-9bf6-4c8b-8872-faf6a0de7663}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scene">
+      <UniqueIdentifier>{dab706f1-3071-4164-94c3-6619ed800cd1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Engine\DataSharing">
+      <UniqueIdentifier>{458aee1a-bab7-4034-a066-aaf691000001}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Engine\DataSharing">
+      <UniqueIdentifier>{5f641b7c-7ea1-4c90-8633-3e761dd1f3ad}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Display.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Vec2f.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Hengine.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="GameSystem.cpp">
-      <Filter>Source Files\Systems</Filter>
-    </ClCompile>
-    <ClCompile Include="GraphicsSystem.cpp">
-      <Filter>Source Files\Systems</Filter>
-    </ClCompile>
-    <ClCompile Include="InputSystem.cpp">
       <Filter>Source Files\Systems</Filter>
     </ClCompile>
     <ClCompile Include="Scheduler.cpp">
@@ -54,30 +75,36 @@
     <ClCompile Include="ThreadPool.cpp">
       <Filter>Source Files\Scheduling</Filter>
     </ClCompile>
+    <ClCompile Include="InputSystem.cpp">
+      <Filter>Source Files\Systems\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicsSystem.cpp">
+      <Filter>Source Files\Systems\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Display.cpp">
+      <Filter>Source Files\Systems\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Vec2f.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Hengine.cpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
     <ClCompile Include="TaskThread.cpp">
+      <Filter>Source Files\Scheduling</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneManager.cpp">
+      <Filter>Source Files\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="UObject.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Display.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Vec2f.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="resource.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Hengine.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="GameSystem.h">
-      <Filter>Header Files\Systems</Filter>
-    </ClInclude>
-    <ClInclude Include="GraphicsSystem.h">
-      <Filter>Header Files\Systems</Filter>
-    </ClInclude>
-    <ClInclude Include="InputSystem.h">
       <Filter>Header Files\Systems</Filter>
     </ClInclude>
     <ClInclude Include="System.h">
@@ -89,14 +116,44 @@
     <ClInclude Include="ThreadPool.h">
       <Filter>Header Files\Scheduling</Filter>
     </ClInclude>
-    <ClInclude Include="TaskThread.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Runnable.h">
       <Filter>Header Files\Scheduling</Filter>
     </ClInclude>
     <ClInclude Include="Util.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TaskThread.h">
+      <Filter>Header Files\Scheduling</Filter>
+    </ClInclude>
+    <ClInclude Include="Vec2f.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Hengine.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicsSystem.h">
+      <Filter>Header Files\Systems\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="InputSystem.h">
+      <Filter>Header Files\Systems\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Display.h">
+      <Filter>Header Files\Systems\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneManager.h">
+      <Filter>Header Files\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="UObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SharedDataObject.h">
+      <Filter>Header Files\Engine\DataSharing</Filter>
+    </ClInclude>
+    <ClInclude Include="SharedData.h">
+      <Filter>Header Files\Engine\DataSharing</Filter>
+    </ClInclude>
+    <ClInclude Include="SharedDataElement.h">
+      <Filter>Header Files\Engine\DataSharing</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
